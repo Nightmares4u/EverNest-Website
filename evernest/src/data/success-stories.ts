@@ -24,6 +24,25 @@ export type SuccessStory = {
 
 export const successStories: SuccessStory[] = [
   {
+    id: "zia-abdullah-family",
+    clientName: "Zia Abdullah",
+    serviceType: "Settle Abroad Consultation",
+    outcomeLabel: "Visa Approved",
+    rating: 5,
+    reviewSource: "google",
+    testimonialQuote:
+      "A very experienced and humble gentleman Mr. Raza owned this business. He is well professional, and a good adviser. A great place to meet if you wanted to settle abroad.",
+    displayQuote:
+      "A very experienced and humble gentleman Mr. Raza owned this business. He is well professional, and a good adviser. A great place to meet if you wanted to settle abroad.",
+    imagePath: "/images/success-stories/zia-abdullah-family.jpeg",
+    imageAlt: "Zia Abdullah and family with Sir Raza at the Evernest Consultants office",
+    imageFit: "cover",
+    mobileImageFit: "contain",
+    imagePosition: "center 30%",
+    featured: true,
+    privacyMode: "full",
+  },
+  {
     id: "syed-uneeb-south-cyprus",
     clientName: "Syed Uneeb Ur Rehman",
     serviceType: "South Cyprus Study Process",
