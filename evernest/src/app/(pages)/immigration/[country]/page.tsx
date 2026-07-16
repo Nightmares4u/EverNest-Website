@@ -7,7 +7,9 @@ import { FinalCTA } from "@/components/sections/FinalCTA"
 import { immigrationData } from "@/data/immigration-countries"
 import { studyVisasData } from "@/data/study-visas"
 import type { FaqItem, ImmigrationCountryData, ImmigrationProgramData } from "@/data/types"
-import { buildMetadata, getFirstSentence } from "@/lib/metadata"
+import { buildMetadata, getFirstSentence, absoluteUrl } from "@/lib/metadata"
+import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 import { use } from "react"
 import Image from "next/image"
 
@@ -40,10 +42,15 @@ export async function generateMetadata({
   }
 
   return buildMetadata({
-    title: pageData.heroTitle,
+    title: `${pageData.heroTitle} — Immigration from Pakistan`,
     description: getFirstSentence(pageData.heroDesc),
     path: `/immigration/${resolvedParams.country.toLowerCase()}`,
-    keywords: [pageData.name, `${pageData.name} immigration`, "EverNest Consultants"],
+    keywords: [
+      `${pageData.name} immigration from Pakistan`,
+      `${pageData.name} immigration consultants Pakistan`,
+      `${pageData.name} immigration`,
+      "EverNest Consultants",
+    ],
   })
 }
 
@@ -63,8 +70,21 @@ export default function ImmigrationCountryPage({ params }: { params: Promise<{ c
     "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop"
   const bgAlt = studyPageData?.backgroundImageAlt || `${pageData.name} Immigration`
 
+  const pageUrl = absoluteUrl(`/immigration/${countryKey}`)
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Immigration", path: "/immigration" },
+      { name: pageData.name, path: `/immigration/${countryKey}` },
+    ]),
+    ...(pageData.faq && pageData.faq.length > 0
+      ? [buildFaqSchema(pageData.faq, pageUrl)]
+      : []),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       {/* Hero */}
       <section className="pt-32 pb-24 md:pt-48 md:pb-32 text-white overflow-hidden relative">
         <div className="absolute inset-0 z-0">

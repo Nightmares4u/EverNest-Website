@@ -4,7 +4,7 @@ import { immigrationData } from "@/data/immigration-countries"
 import { getImmigrationProgramEntries } from "@/data/immigration-programs"
 import { studyVisasData } from "@/data/study-visas"
 
-const baseUrl = "https://evernestconsultants.com"
+const baseUrl = "https://www.evernestconsultants.com"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()

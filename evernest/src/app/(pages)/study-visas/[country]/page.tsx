@@ -6,7 +6,9 @@ import { Button } from "@/components/ui/button"
 import { FinalCTA } from "@/components/sections/FinalCTA"
 import { studyVisasData } from "@/data/study-visas"
 import type { StudyVisaCountryData } from "@/data/types"
-import { buildMetadata, getFirstSentence } from "@/lib/metadata"
+import { buildMetadata, getFirstSentence, absoluteUrl } from "@/lib/metadata"
+import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 import { use } from "react"
 import Image from "next/image"
 
@@ -28,10 +30,15 @@ export async function generateMetadata({
   }
 
   return buildMetadata({
-    title: `Study in ${pageData.name}`,
+    title: `Study in ${pageData.name} from Pakistan — Visa & Admission Guidance`,
     description: getFirstSentence(pageData.heroDesc),
     path: `/study-visas/${resolvedParams.country.toLowerCase()}`,
-    keywords: [`Study in ${pageData.name}`, `${pageData.name} student visa`, "EverNest Consultants"],
+    keywords: [
+      `Study in ${pageData.name} from Pakistan`,
+      `${pageData.name} student visa for Pakistani students`,
+      `${pageData.name} study visa consultants`,
+      "EverNest Consultants",
+    ],
   })
 }
 
@@ -46,8 +53,21 @@ export default function StudyVisaCountryPage({ params }: { params: Promise<{ cou
 
   const sectionBackgroundImage = pageData.sectionBackgroundImage
 
+  const pageUrl = absoluteUrl(`/study-visas/${countryKey}`)
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Study Visas", path: "/study-visas" },
+      { name: `Study in ${pageData.name}`, path: `/study-visas/${countryKey}` },
+    ]),
+    ...(pageData.faq && pageData.faq.length > 0
+      ? [buildFaqSchema(pageData.faq, pageUrl)]
+      : []),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       {/* Hero */}
       <section className="pt-32 pb-24 md:pt-48 md:pb-32 text-white overflow-hidden relative bg-brand-blue">
         {sectionBackgroundImage ? (
