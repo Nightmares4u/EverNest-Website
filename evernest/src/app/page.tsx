@@ -18,14 +18,16 @@ import { homepageGoogleReviews } from "@/data/google-reviews"
 import { buildMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Study Visas, Immigration & Partnerships",
+  title: "Study Visa & Immigration Consultants in Pakistan",
   description:
-    "Explore study visa, immigration, work permit, and B2B partnership guidance from EverNest Consultants, the trading name of EN Consultants (Pvt) Ltd.",
+    "EverNest Consultants (EN Consultants Pvt Ltd) — British Council certified study visa and immigration consultants in Karachi, Lahore & Islamabad. Study abroad, work permits, and B2B partnerships.",
   path: "/",
   keywords: [
-    "EverNest Consultants",
-    "study visas",
+    "study visa consultants in Pakistan",
     "immigration consultants in Pakistan",
+    "study abroad consultants Karachi",
+    "study visa consultants Lahore",
+    "EverNest Consultants",
     "B2B partnerships",
   ],
 })

@@ -2,13 +2,13 @@ import type { MetadataRoute } from "next"
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    host: "https://evernestconsultants.com",
+    host: "https://www.evernestconsultants.com",
     rules: [
       {
         userAgent: "*",
         allow: "/",
       },
     ],
-    sitemap: "https://evernestconsultants.com/sitemap.xml",
+    sitemap: "https://www.evernestconsultants.com/sitemap.xml",
   }
 }

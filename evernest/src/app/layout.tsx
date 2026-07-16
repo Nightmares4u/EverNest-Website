@@ -3,8 +3,10 @@ import { Manrope, Playfair_Display } from "next/font/google"
 
 import { Footer } from "@/components/shared/Footer"
 import { Header } from "@/components/shared/Header"
+import { JsonLd } from "@/components/shared/JsonLd"
 import { StickyActions } from "@/components/shared/StickyActions"
 import { siteConfig } from "@/data/site"
+import { buildOrganizationSchema, buildWebSiteSchema } from "@/lib/schema"
 
 import "./globals.css"
 
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
   description:
     "EverNest Consultants, the trading name of EN Consultants (Pvt) Ltd., provides study visa, immigration, and B2B partnership consulting with a Pakistan-rooted and internationally connected team.",
   applicationName: siteConfig.name,
-  metadataBase: new URL("https://evernestconsultants.com"),
+  metadataBase: new URL("https://www.evernestconsultants.com"),
   authors: [{ name: siteConfig.legalName }],
   creator: siteConfig.name,
   publisher: siteConfig.legalName,
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
       "Study visa, immigration, and B2B partnership consulting from EverNest Consultants, the trading name of EN Consultants (Pvt) Ltd.",
     siteName: siteConfig.name,
     type: "website",
-    url: "https://evernestconsultants.com",
+    url: "https://www.evernestconsultants.com",
   },
   twitter: {
     card: "summary_large_image",
@@ -70,6 +72,7 @@ export default function RootLayout({
       className={`${manrope.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-foreground">
+        <JsonLd data={[buildOrganizationSchema(), buildWebSiteSchema()]} />
         <Header />
         <main className="flex-1 flex flex-col">
           {children}

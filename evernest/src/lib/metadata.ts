@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { siteConfig } from "@/data/site";
 
-export const SITE_URL = "https://evernestconsultants.com";
+export const SITE_URL = "https://www.evernestconsultants.com";
 
 export function absoluteUrl(path: string) {
   return new URL(path, SITE_URL).toString();
