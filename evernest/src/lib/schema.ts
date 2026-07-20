@@ -74,9 +74,12 @@ export function buildOrganizationSchema() {
         telephone: siteConfig.contact.phone,
       },
     ],
-    // TODO: add official social profile URLs (YouTube channel, Instagram,
-    // Facebook, LinkedIn) to strengthen entity recognition.
-    sameAs: [] as string[],
+    sameAs: [
+      "https://www.facebook.com/EverNestconsultants/",
+      "https://www.instagram.com/evernestconsultants/",
+      "https://www.youtube.com/channel/UC1QSbHzVD5lytpFPTwMJY2Q",
+      "https://pk.linkedin.com/company/evernestconsultants",
+    ] as string[],
     knowsAbout: [
       "Study visas",
       "Student visa consulting",
