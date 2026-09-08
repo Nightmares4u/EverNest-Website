@@ -62,6 +62,8 @@ export const siteConfig = {
   social: [],
   googleReviewsUrl:
     "https://www.google.com/search?q=evernest+consultants&oq=evernest+consultants&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIHCAIQABiABDINCAMQABiDARixAxiABDIKCAQQABixAxiABDIKCAUQABixAxiABDIKCAYQABixAxiABDIHCAcQLhiABDINCAgQABiDARixAxiABDINCAkQABiDARixAxiABNIBCDQyNzJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x3eb33f0f7f1c54af:0x35bbd106f3ccb0a7,1,,,,",
-  googleReviewRating: 4.5,
-  googleReviewCount: 81,
+  // Displayed on the site, so keep in sync with the Google Business Profile.
+  // Verified against the live listing on 2026-09-08.
+  googleReviewRating: 4.6,
+  googleReviewCount: 90,
 }
