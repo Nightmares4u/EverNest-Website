@@ -1,87 +1,82 @@
-# EverNest Consultants website — SEO automation handoff
+# EverNest Consultants website — SEO automation
 
-Context: this repo (Nightmares4u/EverNest-Website) is the live site for
-evernestconsultants.com. A Cowork session has been running a weekly SEO
-audit/fix cycle and needs the following finished. Pending items, in order:
+This repo (Nightmares4u/EverNest-Website) is the live site for
+evernestconsultants.com. The Next.js app is in `evernest/` — run npm
+commands from there, not from the repo root.
 
-## 1. Commit and push pending SEO fixes (already made, uncommitted)
-Four files under `evernest/src/app/(pages)/immigration/` (express-entry,
-usa-work-permit, h1b, j1) already have BreadcrumbList/FAQPage JSON-LD added,
-matching the pattern in `immigration/[country]/page.tsx`. Also
-`scripts/fetch_search_console.py` was added (see #2). Just needs:
+## How SEO stays healthy
+
+Three things run on their own:
+
+1. **SEO audit** (`scripts/seo-audit.mjs`) — crawls every URL in the
+   sitemap against a running build and checks titles, descriptions,
+   canonicals, a single h1, Open Graph tags, indexability, JSON-LD
+   validity, breadcrumbs on nested pages, and image alt text. It also
+   enforces that FAQPage schema is backed by *visible* on-page content,
+   which Google requires. Errors fail the build; warnings are advisory.
+
+   Runs via `.github/workflows/seo-audit.yml` on every PR, every push to
+   main, and weekly. Locally:
+   ```
+   cd evernest && npm run build && npx next start -p 3900 &
+   node scripts/seo-audit.mjs --base http://localhost:3900
+   ```
+   Add `--json <path>` to archive findings.
+
+2. **Search Console pull** (`.github/workflows/seo-search-console.yml`) —
+   Mondays 15:00 UTC. Writes `seo-data/search-console/latest.json`, which
+   is the source of truth for real search numbers.
+
+3. **Weekly SEO agent** — a scheduled cloud agent, Mondays 16:00 UTC (an
+   hour after the data pull, so it works from fresh numbers). It runs the
+   audit, fixes up to 5 issues, and **commits and pushes to main**, which
+   deploys live. Its rules are in `scripts/SEO-AGENT.md`.
+
+   Routine: https://claude.ai/code/routines/trig_015KjaTnEQfTUrPUEgzCrQxJ
+
+### Reviewing or undoing an agent run
+
+Every run is one commit prefixed `SEO auto:`, plus a report and a
+before/after audit pair.
+
+```bash
+git log --grep "^SEO auto:" --oneline   # every run
+git show <sha>                          # what one run changed
+git revert <sha>                        # undo one run
 ```
-git add -A
-git commit -m "SEO: add JSON-LD to immigration pages; add Search Console fetch script"
-git push
-```
+Reports: `seo-data/reports/<date>.md`. Audits: `seo-data/audits/`.
 
-## 2. Create the GitHub Actions workflow (blocked from remote-write, needs manual creation)
-Create `.github/workflows/seo-search-console.yml`:
+## Outstanding
 
-```yaml
-name: Weekly Search Console pull
+- **`GSC_SERVICE_ACCOUNT_JSON` secret is not set**, so the Search Console
+  workflow has no credential and the agent is running without real search
+  data. To fix: Google Cloud → enable "Search Console API" → create a
+  service account → download its JSON key. Then Search Console (property
+  `https://www.evernestconsultants.com/`) → Settings → Users and
+  permissions → add the service account email. Then GitHub repo →
+  Settings → Secrets and variables → Actions → new secret named
+  `GSC_SERVICE_ACCOUNT_JSON` with the full key JSON. Never commit the key.
 
-on:
-  schedule:
-    - cron: "0 15 * * 1"
-  workflow_dispatch: {}
+- **Factual error on the Cyprus page.** `cyprus.heroDesc` in
+  `evernest/src/data/study-visas.ts` says Cyprus is "part of the Schengen
+  zone". Cyprus is an EU member but is **not** in Schengen. Needs a human
+  to confirm replacement wording.
 
-permissions:
-  contents: write
+- The public Search Console API exposes Search Analytics and URL
+  Inspection only. There is no API for the aggregate "Page indexing"
+  report, so indexing-status review is still manual in the UI.
 
-jobs:
-  fetch:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+## Conventions
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install google-api-python-client google-auth
-
-      - name: Fetch Search Console data
-        env:
-          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
-        run: python scripts/fetch_search_console.py
-
-      - name: Commit report
-        run: |
-          git config user.name "seo-bot"
-          git config user.email "actions@github.com"
-          git add seo-data/search-console
-          git diff --cached --quiet || git commit -m "Weekly Search Console data pull"
-          git push
-```
-
-`scripts/fetch_search_console.py` already exists and reads its credential
-from the `GSC_SERVICE_ACCOUNT_JSON` env var — do not hardcode any key into
-this repo.
-
-## 3. One-time Google Cloud + GitHub setup (user does this, not Claude)
-- Google Cloud: create/use a project, enable the "Search Console API",
-  create a service account, download its JSON key.
-- Search Console (search.google.com/search-console, property
-  https://www.evernestconsultants.com/) → Settings → Users and permissions
-  → add the service account's email as a user.
-- GitHub repo → Settings → Secrets and variables → Actions → New repository
-  secret → name `GSC_SERVICE_ACCOUNT_JSON` → paste the full key JSON.
-
-## 4. Known issue: legacy 301 redirects and DNS
-Already resolved — apex domain (no-www) now correctly redirects to www via
-Vercel, confirmed live. No further action.
-
-## 5. Outstanding content gap (not yet done)
-FAQ content exists on only 1 of 17 study-visa country pages (usa). Italy,
-Canada, UK, Germany, Australia, France have no FAQ block yet — this blocks
-FAQPage rich-result schema on those pages even though the code path
-supports it (`buildFaqSchema` fires automatically once `pageData.faq` is
-populated in `evernest/src/data/study-visas.ts`).
-
-## Ongoing tracking
-Weekly SEO audit reports (from a separate Cowork scheduled task) are logged
-in Google Drive, folder "EverNest Consultants — SEO Tracking". Once the
-GitHub Action above is live, `seo-data/search-console/latest.json` in this
-repo becomes the source of truth for real Search Console numbers.
+- Legal company name is EN Consultants (Pvt) Ltd; EverNest Consultants is
+  the trading/public brand.
+- Maintain the red/blue premium institutional brand style.
+- Do not touch DNS, domain, email, or Vercel settings unless explicitly
+  instructed.
+- Structured data helpers live in `evernest/src/lib/schema.ts`; metadata
+  helpers in `evernest/src/lib/metadata.ts`. Use `getMetaDescription` for
+  meta descriptions (160-char cap) and `getFirstSentence` for on-page card
+  copy.
+- FAQ content lives in the page data (`faq: [{ q, a }]`) and renders
+  automatically; `buildFaqSchema` then fires on its own. Never add FAQ
+  schema without also rendering the FAQ.
