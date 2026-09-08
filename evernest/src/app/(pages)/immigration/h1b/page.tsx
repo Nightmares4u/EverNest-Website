@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { FinalCTA } from "@/components/sections/FinalCTA"
 import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
 import { buildMetadata } from "@/lib/metadata"
+import { buildBreadcrumbSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 const pageData = {
   heroTitle: "H-1B Visa",
@@ -46,8 +48,17 @@ export const metadata: Metadata = buildMetadata({
 })
 
 export default function H1BVisaPage() {
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Immigration", path: "/immigration" },
+      { name: "H-1B Visa", path: "/immigration/h1b" },
+    ]),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       <CinematicPageHero
         variant="immigration"
         eyebrow="U.S. Immigration"

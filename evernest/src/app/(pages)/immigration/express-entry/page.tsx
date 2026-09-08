@@ -5,7 +5,9 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { FinalCTA } from "@/components/sections/FinalCTA"
 import { studyVisasData } from "@/data/study-visas"
-import { buildMetadata } from "@/lib/metadata"
+import { buildMetadata, absoluteUrl } from "@/lib/metadata"
+import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 const pageData = {
   heroTitle: "Express Entry Program for Canada",
@@ -197,8 +199,19 @@ export const metadata: Metadata = buildMetadata({
 export default function ExpressEntryPage() {
   const canadaStudyData = studyVisasData.canada
 
+  const pageUrl = absoluteUrl("/immigration/express-entry")
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Immigration", path: "/immigration" },
+      { name: "Express Entry", path: "/immigration/express-entry" },
+    ]),
+    buildFaqSchema(pageData.faq, pageUrl),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       <section className="relative overflow-hidden bg-brand-blue pt-24 pb-16 text-white md:pt-32 md:pb-24">
         {canadaStudyData.sectionBackgroundImage ? (
           <div className="absolute inset-0 z-0">

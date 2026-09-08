@@ -4,7 +4,9 @@ import { CheckCircle2, Briefcase, FileText, Globe, ArrowRight, ChevronDown, Book
 import { Button } from "@/components/ui/button"
 import { FinalCTA } from "@/components/sections/FinalCTA"
 import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
-import { buildMetadata } from "@/lib/metadata"
+import { buildMetadata, absoluteUrl } from "@/lib/metadata"
+import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 const pageData = {
   heroTitle: "USA Work Permit for Pakistani Professionals",
@@ -131,8 +133,19 @@ export const metadata: Metadata = buildMetadata({
 })
 
 export default function USAWorkPermitPage() {
+  const pageUrl = absoluteUrl("/immigration/usa-work-permit")
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Immigration", path: "/immigration" },
+      { name: "USA Work Permit", path: "/immigration/usa-work-permit" },
+    ]),
+    buildFaqSchema(pageData.faq, pageUrl),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       {/* Hero */}
       <CinematicPageHero
         variant="immigration"

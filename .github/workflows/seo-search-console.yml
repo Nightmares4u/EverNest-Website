@@ -1,0 +1,31 @@
+name: Weekly Search Console pull
+
+on:
+  schedule:
+    - cron: "0 15 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install google-api-python-client google-auth
+      - name: Fetch Search Console data
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: python scripts/fetch_search_console.py
+      - name: Commit report
+        run: |
+          git config user.name "seo-bot"
+          git config user.email "actions@github.com"
+          git add seo-data/search-console
+          git diff --cached --quiet || git commit -m "Weekly Search Console data pull"
+          git push
