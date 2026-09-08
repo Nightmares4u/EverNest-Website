@@ -6,6 +6,8 @@ import { FinalCTA } from "@/components/sections/FinalCTA"
 import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
 import { siteConfig } from "@/data/site"
 import { buildMetadata } from "@/lib/metadata"
+import { buildBreadcrumbSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 const pageData = {
   heroTitle: "Study Abroad Consultants in Karachi",
@@ -152,8 +154,17 @@ export const metadata: Metadata = buildMetadata({
 })
 
 export default function StudyAbroadGuidePage() {
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Resources", path: "/resources" },
+      { name: "Study Abroad Guide", path: "/resources/study-abroad-guide" },
+    ]),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       <CinematicPageHero
         variant="article"
         eyebrow="Student planning guide"

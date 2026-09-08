@@ -17,7 +17,7 @@ export const metadata: Metadata = buildMetadata({
 export default function SuccessStoriesPage() {
   return (
     <div className="pt-20">
-      <SuccessStoriesGrid />
+      <SuccessStoriesGrid headingLevel="h1" />
       <VideoReelsShowcase />
       <GoogleReviewsShowcase reviews={successStoriesGoogleReviews} />
       <FinalCTA />

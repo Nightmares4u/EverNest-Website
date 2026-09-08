@@ -1,0 +1,48 @@
+name: SEO audit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  # Weekly, so content-only changes and drift get caught even without a PR.
+  schedule:
+    - cron: "0 14 * * 1"
+  workflow_dispatch: {}
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: evernest/package-lock.json
+
+      - name: Install dependencies
+        working-directory: evernest
+        run: npm ci
+
+      - name: Build
+        working-directory: evernest
+        run: npm run build
+
+      # Server and audit share one step so the background process is
+      # guaranteed to still be alive when the audit runs.
+      - name: Serve and audit
+        run: |
+          cd evernest
+          nohup npx next start -p 3900 > /tmp/next-server.log 2>&1 &
+          cd ..
+          for i in $(seq 1 60); do
+            curl -sf -o /dev/null http://localhost:3900/ && break
+            if [ "$i" -eq 60 ]; then
+              echo "Server did not become ready in 60s:"
+              cat /tmp/next-server.log
+              exit 1
+            fi
+            sleep 1
+          done
+          node scripts/seo-audit.mjs --base http://localhost:3900

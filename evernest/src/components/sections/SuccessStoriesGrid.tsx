@@ -10,7 +10,17 @@ import { successStories } from "@/data/success-stories"
 
 const AUTO_ADVANCE_MS = 5000
 
-export function SuccessStoriesGrid() {
+/**
+ * `headingLevel` keeps the document outline valid: this block is one section
+ * among many on the homepage (h2), but the page's main heading on
+ * /success-stories (h1).
+ */
+export function SuccessStoriesGrid({
+  headingLevel = "h2",
+}: {
+  headingLevel?: "h1" | "h2"
+} = {}) {
+  const Heading = headingLevel
   const [activeIndex, setActiveIndex] = useState(0)
   const [direction, setDirection] = useState(1)
   const prefersReducedMotion = useReducedMotion()
@@ -80,9 +90,9 @@ export function SuccessStoriesGrid() {
           <span className="inline-flex items-center rounded-full border border-red-100 bg-white px-4 py-1 text-xs font-semibold tracking-[0.24em] text-red-600 uppercase shadow-sm">
             Client Wins On Repeat
           </span>
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
+          <Heading className="mt-5 text-3xl font-bold tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
             Success Stories That <span className="text-red-600">Keep Moving</span>
-          </h2>
+          </Heading>
           <p className="mt-4 text-lg text-slate-600">
             Explore real Evernest outcomes through an auto-rolling story reel. It advances every 5 seconds, and visitors can swipe, tap, or use the arrows to move at their own pace.
           </p>

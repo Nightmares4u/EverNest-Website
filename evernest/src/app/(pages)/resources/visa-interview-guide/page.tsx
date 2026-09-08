@@ -6,6 +6,8 @@ import { FinalCTA } from "@/components/sections/FinalCTA"
 import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
 import { siteConfig } from "@/data/site"
 import { buildMetadata } from "@/lib/metadata"
+import { buildBreadcrumbSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 const pageData = {
   heroTitle: "Student Visa Interview Tips for Pakistani Students",
@@ -164,8 +166,17 @@ export const metadata: Metadata = buildMetadata({
 })
 
 export default function VisaInterviewGuidePage() {
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Resources", path: "/resources" },
+      { name: "Visa Interview Guide", path: "/resources/visa-interview-guide" },
+    ]),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       <CinematicPageHero
         variant="article"
         eyebrow="Interview readiness"

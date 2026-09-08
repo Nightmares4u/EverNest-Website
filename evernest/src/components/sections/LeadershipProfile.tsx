@@ -11,7 +11,17 @@ import {
 import { sirRazaProfile } from "@/data/leadership"
 import { mediaFeatures, sirRazaMediaSection, type MediaPlatform } from "@/data/media"
 
-export function LeadershipProfile() {
+/**
+ * `headingLevel` keeps the document outline valid: this block is the main
+ * subject on /about/sir-raza (h1), but a section within /about, which has its
+ * own h1 (h2).
+ */
+export function LeadershipProfile({
+  headingLevel = "h1",
+}: {
+  headingLevel?: "h1" | "h2"
+}) {
+  const NameHeading = headingLevel
   const featuredMedia = mediaFeatures.find((item) => item.featured)
   const supportingMedia = mediaFeatures.filter((item) => !item.featured)
   const supportingVideoMedia = supportingMedia.filter(
@@ -31,9 +41,9 @@ export function LeadershipProfile() {
               <div className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/8 px-4 py-1.5 text-sm font-medium text-red-200 backdrop-blur-sm">
                 Leadership
               </div>
-              <h1 className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
+              <NameHeading className="mt-6 max-w-3xl text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
                 {sirRazaProfile.name}
-              </h1>
+              </NameHeading>
               <p className="mt-4 text-xl text-blue-100">{sirRazaProfile.title}</p>
 
               <div className="mt-8 space-y-5 text-base leading-8 text-slate-200 md:text-lg">

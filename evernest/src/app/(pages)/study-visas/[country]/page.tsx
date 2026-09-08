@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { FinalCTA } from "@/components/sections/FinalCTA"
 import { studyVisasData } from "@/data/study-visas"
 import type { StudyVisaCountryData, FaqItem } from "@/data/types"
-import { buildMetadata, getFirstSentence, absoluteUrl } from "@/lib/metadata"
+import { buildMetadata, getMetaDescription, absoluteUrl } from "@/lib/metadata"
 import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
 import { JsonLd } from "@/components/shared/JsonLd"
 import { use } from "react"
@@ -30,8 +30,10 @@ export async function generateMetadata({
   }
 
   return buildMetadata({
-    title: `Study in ${pageData.name} from Pakistan — Visa & Admission Guidance`,
-    description: getFirstSentence(pageData.heroDesc),
+    // Kept short: the layout appends " | EverNest Consultants", and Google
+    // truncates around 60 characters.
+    title: `Study in ${pageData.name} from Pakistan`,
+    description: getMetaDescription(pageData.heroDesc),
     path: `/study-visas/${resolvedParams.country.toLowerCase()}`,
     keywords: [
       `Study in ${pageData.name} from Pakistan`,

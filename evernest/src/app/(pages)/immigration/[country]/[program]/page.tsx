@@ -8,7 +8,9 @@ import { Button } from "@/components/ui/button"
 import { FinalCTA } from "@/components/sections/FinalCTA"
 import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
 import { immigrationProgramsData } from "@/data/immigration-programs"
-import { buildMetadata, getFirstSentence } from "@/lib/metadata"
+import { buildMetadata, getMetaDescription } from "@/lib/metadata"
+import { buildBreadcrumbSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 export async function generateMetadata({
   params,
@@ -30,7 +32,7 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: `${programData.name} Program`,
-    description: getFirstSentence(programData.heroDesc),
+    description: getMetaDescription(programData.heroDesc),
     path: `/immigration/${resolvedParams.country}/${resolvedParams.program}`,
     keywords: [programData.name, `${programData.country} immigration`, "EverNest Consultants"],
   })
@@ -45,8 +47,21 @@ export default function ImmigrationProgramPage({ params }: { params: Promise<{ c
     notFound()
   }
 
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Immigration", path: "/immigration" },
+      { name: programData.country, path: `/immigration/${resolvedParams.country}` },
+      {
+        name: programData.name,
+        path: `/immigration/${resolvedParams.country}/${resolvedParams.program}`,
+      },
+    ]),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       {/* Hero */}
       <CinematicPageHero
         variant="immigration"

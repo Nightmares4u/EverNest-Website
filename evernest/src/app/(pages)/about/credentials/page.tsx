@@ -7,11 +7,13 @@ import {
   institutionalNetworkSection,
 } from "@/data/institutional-network"
 import { buildMetadata } from "@/lib/metadata"
+import { buildBreadcrumbSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 export const metadata: Metadata = buildMetadata({
   title: "Institutional Network & Credentials",
   description:
-    "Explore the broader university and institutional network connected to EverNest Consultants' study-abroad pathways, admissions support, and student placement ecosystem.",
+    "Explore the university and institutional network behind EverNest Consultants' study-abroad pathways, admissions support, and student placements.",
   path: "/about/credentials",
   keywords: [
     "EverNest institutional network",
@@ -21,8 +23,17 @@ export const metadata: Metadata = buildMetadata({
 })
 
 export default function AboutCredentialsPage() {
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "About", path: "/about" },
+      { name: "Credentials", path: "/about/credentials" },
+    ]),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       <section className="relative overflow-hidden bg-brand-ice pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(225,29,46,0.06),transparent_25%),radial-gradient(circle_at_bottom_right,rgba(11,27,58,0.08),transparent_30%)]" />
 

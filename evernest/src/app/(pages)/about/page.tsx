@@ -116,7 +116,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <LeadershipProfile />
+      <LeadershipProfile headingLevel="h2" />
       <TrustPartnershipsSection />
 
       <FinalCTA />

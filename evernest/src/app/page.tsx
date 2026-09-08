@@ -20,7 +20,7 @@ import { buildMetadata } from "@/lib/metadata"
 export const metadata: Metadata = buildMetadata({
   title: "Study Visa & Immigration Consultants in Pakistan",
   description:
-    "EverNest Consultants (EN Consultants Pvt Ltd) — British Council certified study visa and immigration consultants in Karachi, Lahore & Islamabad. Study abroad, work permits, and B2B partnerships.",
+    "British Council certified study visa and immigration consultants in Karachi, Lahore & Islamabad. Study abroad, work permits, and B2B partnerships.",
   path: "/",
   keywords: [
     "study visa consultants in Pakistan",

@@ -6,6 +6,8 @@ import { FinalCTA } from "@/components/sections/FinalCTA"
 import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
 import { siteConfig } from "@/data/site"
 import { buildMetadata } from "@/lib/metadata"
+import { buildBreadcrumbSchema } from "@/lib/schema"
+import { JsonLd } from "@/components/shared/JsonLd"
 
 const pageData = {
   heroTitle: "Top Countries for Pakistani Students to Study Abroad in 2025",
@@ -188,8 +190,17 @@ export const metadata: Metadata = buildMetadata({
 })
 
 export default function CountryComparisonPage() {
+  const structuredData = [
+    buildBreadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Resources", path: "/resources" },
+      { name: "Country Comparison", path: "/resources/country-comparison" },
+    ]),
+  ]
+
   return (
     <>
+      <JsonLd data={structuredData} />
       <CinematicPageHero
         variant="article"
         eyebrow="Compare destinations"

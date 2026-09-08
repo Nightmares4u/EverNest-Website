@@ -7,7 +7,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA"
 import { immigrationData } from "@/data/immigration-countries"
 import { studyVisasData } from "@/data/study-visas"
 import type { FaqItem, ImmigrationCountryData, ImmigrationProgramData } from "@/data/types"
-import { buildMetadata, getFirstSentence, absoluteUrl } from "@/lib/metadata"
+import { buildMetadata, getMetaDescription, absoluteUrl } from "@/lib/metadata"
 import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
 import { JsonLd } from "@/components/shared/JsonLd"
 import { use } from "react"
@@ -42,8 +42,11 @@ export async function generateMetadata({
   }
 
   return buildMetadata({
-    title: `${pageData.heroTitle} — Immigration from Pakistan`,
-    description: getFirstSentence(pageData.heroDesc),
+    // Built from `name`, not `heroTitle`: several heroTitles already end in
+    // "Immigration Consultants in Pakistan", which made the tag redundant and
+    // pushed it past the ~60 characters Google renders.
+    title: `${pageData.name} Immigration from Pakistan`,
+    description: getMetaDescription(pageData.heroDesc),
     path: `/immigration/${resolvedParams.country.toLowerCase()}`,
     keywords: [
       `${pageData.name} immigration from Pakistan`,
