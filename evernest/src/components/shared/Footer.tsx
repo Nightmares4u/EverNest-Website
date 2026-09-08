@@ -30,6 +30,7 @@ export function Footer() {
             <h3 className="font-display text-xl font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-3 text-brand-ice/80 text-sm">
               <li><Link href="/study-visas" className="hover:text-white transition-colors">Study Visas</Link></li>
+              <li><Link href="/study-visa-consultants-karachi" className="hover:text-white transition-colors">Karachi Office</Link></li>
               <li><Link href="/immigration" className="hover:text-white transition-colors">Immigration</Link></li>
               <li><Link href="/b2b-partnerships" className="hover:text-white transition-colors">B2B Partnerships</Link></li>
               <li><Link href="/success-stories" className="hover:text-white transition-colors">Success Stories</Link></li>

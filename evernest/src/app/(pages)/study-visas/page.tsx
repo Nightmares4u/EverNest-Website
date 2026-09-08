@@ -16,11 +16,19 @@ import { studyVisasData } from "@/data/study-visas"
 import { buildMetadata, getFirstSentence } from "@/lib/metadata"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Study Visas",
+  // Ranked ~7 with a 0% CTR: good position, but "Study Visas" gave searchers
+  // no reason to click. Now targets the commercial query and states the offer.
+  title: "Study Visa Consultants in Pakistan",
   description:
-    "Browse study visa destinations, admissions guidance, and country-specific education pathways with EverNest Consultants.",
+    "Study visa guidance for 18 destinations including the UK, Canada, Italy, and Australia. Free profile evaluation from British Council certified consultants.",
   path: "/study-visas",
-  keywords: ["Study visas", "study abroad consultants", "student visa support", "EverNest Consultants"],
+  keywords: [
+    "study visa consultants in Pakistan",
+    "study abroad consultants Karachi",
+    "student visa consultants Lahore",
+    "study visa destinations",
+    "EverNest Consultants",
+  ],
 })
 
 const destinations = Object.entries(studyVisasData).map(([slug, data]) => ({

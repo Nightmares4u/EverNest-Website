@@ -34,6 +34,11 @@ export interface StudyVisaLanguageRequirements {
 export interface StudyVisaCountryData {
   name: string;
   heroDesc: string;
+  /**
+   * Purpose-written search snippet. Falls back to the first sentence of
+   * heroDesc, which reads as body prose and earns very few clicks.
+   */
+  metaDescription?: string;
   homepageImage?: string;
   sectionBackgroundImage?: string;
   imageAlt?: string;

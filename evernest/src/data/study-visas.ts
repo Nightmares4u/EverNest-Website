@@ -3,6 +3,8 @@ import type { StudyVisaCountryData } from "@/data/types";
 export const studyVisasData: Record<string, StudyVisaCountryData> = {
   italy: {
     name: "Italy",
+    metaDescription:
+      "Study in Italy from Pakistan — English-taught degrees, affordable public universities, and full Type D student visa support. Free profile evaluation.",
     heroDesc: "Italy has been one of the leading academic destinations in Europe. The country possesses deep-rooted educational traditions combined with modern teaching and research efficiency. Italy is home to the world's oldest universities. Italy offers internationally acknowledged degrees, competitively priced tuition, and it is teaching programs in English, making it a preferred option for students across the world. When students are planning for a study abroad in Italy, they will realize the academic, cultural, and lifestyle balance the country offers. Italy is home to many ancient educational institutes and progressive polytechnic universities. It's an enviable study destination.",
     homepageImage: "/images/destinations/homepage/italy-landmark.jpg",
     sectionBackgroundImage: "/images/destinations/backgrounds/italy-study-bg.jpg",
@@ -106,6 +108,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   finland: {
     name: "Finland",
+    metaDescription:
+      "Study in Finland from Pakistan — €4,000–12,000 tuition, 30 hours a week work rights, and a 2-year post-study residence permit.",
     heroDesc: "For Pakistani students, Finland is a top choice if you want to study in Europe while also receiving a great education at a reasonable price. Study in Finland has highly regarded international universities that offer programs in English, along with welcoming and safe student cities that cater to international students. EverNest Consultants is there to assist students in every step of their journey, whether it is selecting the best university to gaining admission, preparing their student visa, or helping them during their stay in Finland after they arrive.",
     sectionBackgroundImage: "/images/destinations/backgrounds/finland-study-bg.jpg",
     backgroundImageAlt: "Helsinki waterfront and cathedral in Finland",
@@ -219,6 +223,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   turkey: {
     name: "Turkey",
+    metaDescription:
+      "Study in Turkey from Pakistan — $2,000–9,000 tuition, English-taught degrees, and fully funded Türkiye Bursları scholarships.",
     heroDesc: "Turkiye is a popular destination for students from Pakistan due to its universities, affordability, and cultural diversity. Those studying in Turkiye also get to enjoy the geographical location, situated between Europe and Asia, and plan for immigration as Turkiye has simple immigration methods for those wanting to study, work, and settle in the country.",
     sectionBackgroundImage: "/images/destinations/backgrounds/turkey-study-bg.jpg",
     backgroundImageAlt: "Istanbul skyline and waterfront in Turkey",
@@ -330,6 +336,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   germany: {
     name: "Germany",
+    metaDescription:
+      "Study in Germany from Pakistan — low or no tuition at public universities, English-taught master's degrees, and blocked account guidance.",
     heroDesc: "Germany is a leading European study destination for students who want research-focused universities, strong industry links, and globally respected degrees. With many English-taught programs, affordable public university options, and clear career pathways after graduation, Germany gives ambitious students a practical route into Europe. EverNest Consultants supports students with university selection, application planning, documentation, and visa guidance so the move from admission to arrival feels structured and confident.",
     homepageImage: "/images/destinations/homepage/germany-landmark.jpg",
     sectionBackgroundImage: "/images/destinations/homepage/germany-landmark.jpg",
@@ -452,6 +460,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   uae: {
     name: "United Arab Emirates",
+    metaDescription:
+      "Study in the UAE from Pakistan — English-taught degrees in Dubai and Abu Dhabi, 15–20 hours a week work rights, and Golden Visa pathways.",
     heroDesc: "The United Arab Emirates (UAE) has become a top destination for globally recognized education, accompanied by cultural proximity and modern amenities, for most Pakistani students. With reasonable tuition, the Emirates also has excellent universities and offers a Muslim-friendly atmosphere. With such a wide array of amenities, the country provides a good combination of education and lifestyle. To ensure a seamless transition with minimum hassle for your admission, visa, and post-arrival travel, EverNest Consultants works with trusted immigration and education experts.",
     homepageImage: "/images/destinations/homepage/uae-landmark.jpeg",
     sectionBackgroundImage: "/images/destinations/backgrounds/uae-study-bg.jpg",
@@ -566,6 +576,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   canada: {
     name: "Canada",
+    metaDescription:
+      "Study in Canada from Pakistan — 24 hours a week work rights, a 3-year PGWP, and a clear PR pathway. Study Permit filed via licensed RCIC.",
     heroDesc: "Canada is regarded as one of the most welcoming and diverse countries not only for students but also for immigrants as well. It’s arguably one of the best options for international students who dream of securing a PR immediately after receiving world-class education, along with long term stability and easy immigration pathways. Canadian Institutions open doors to brighter futures.",
     homepageImage: "/images/destinations/homepage/canada-landmark.jpg",
     sectionBackgroundImage: "/images/destinations/backgrounds/canada-study-bg.jpg",
@@ -660,6 +672,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   georgia: {
     name: "Georgia",
+    metaDescription:
+      "Study in Georgia from Pakistan — no IELTS for most programs, WHO-recognised medical degrees, and tuition from $4,000 a year.",
     heroDesc: "Georgia is becoming a favorite choice for students seeking high-quality education without huge costs. Known especially for its medical universities, the country offers degrees that are recognized all over the world, affordable tuition, and a straightforward admission process. Whether it's medicine and dentistry or business, engineering, and arts, Georgia has a diverse range of English-taught programs to match your palette while also meeting international standards. In addition to that, it’s a safe, welcoming country with a mix of European and Asian culture—perfect for students who want both education and life experience.",
     sectionBackgroundImage: "/images/destinations/backgrounds/georgia-study-bg.jpg",
     backgroundImageAlt: "Tbilisi cityscape and river view in Georgia",
@@ -751,6 +765,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   "united-kingdom": {
     name: "United Kingdom",
+    metaDescription:
+      "Study in the UK from Pakistan — CAS and TB test support, the 2-year Graduate Route work visa, and IELTS 6.0–6.5 entry requirements.",
     heroDesc: "The United Kingdom accommodates some of the most prestigious universities found anywhere in the world. It is a top ranked study destination for students looking for a bright future. With its world class programs, UK is a top choice for international students opting for a Study Visa. With a strong focus on research opportunities and career growth, the UK Student Visa (previously known as Tier 4) delivers you with internationally recognized degrees, valued by employers anywhere in the world.",
     homepageImage: "/images/destinations/homepage/united-kingdom-landmark.jpg",
     sectionBackgroundImage: "/images/destinations/backgrounds/united-kingdom-study-bg.jpg",
@@ -829,6 +845,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   azerbaijan: {
     name: "Azerbaijan",
+    metaDescription:
+      "Study in Azerbaijan from Pakistan — tuition from $2,000 a year, English-taught degrees in Baku, and 20 hours a week work rights.",
     heroDesc: "Azerbaijan is an excellent option if you’re looking for a more economical and contemporary place to study in a warm and friendly environment. Due to affordable tuition, universities offering English-medium instruction, and a focus on international students, it is no wonder it is a growing favorite among Pakistani students. EverNest Consultants assists you in all phases of this—from university selection to visa and settlement guidance.",
     sectionBackgroundImage: "/images/destinations/backgrounds/azerbaijan-study-bg.jpg",
     backgroundImageAlt: "Baku skyline with the Flame Towers in Azerbaijan",
@@ -938,6 +956,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   france: {
     name: "France",
+    metaDescription:
+      "Study in France from Pakistan — €2,700–3,800 public university tuition, English-taught degrees, and a 2-year post-study stay.",
     heroDesc: "France has become a preferred choice for Pakistani students who want an affordable European degree with real career opportunities. The country is home to top-ranked universities, an easy admission process, and a welcoming environment for international learners. EverNest Consultants works alongside licensed experts to make your entire journey—admission, visa, and post-arrival—smooth and transparent.",
     homepageImage: "/images/destinations/homepage/france-landmark.webp",
     sectionBackgroundImage: "/images/destinations/backgrounds/france-study-bg.jpg",
@@ -1052,6 +1072,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   ireland: {
     name: "Ireland",
+    metaDescription:
+      "Study in Ireland from Pakistan — every degree taught in English, a 2-year post-study work visa, and PR eligibility after 5 years.",
     heroDesc: "For Pakistani students, Ireland is a prime choice to pursue their education, build their careers, and experience life outside the country. Studying in Ireland for Pakistani students means getting internationally accepted qualifications, having the chance to work after studies, and benefiting from one of the fastest-growing economies in Europe. Ireland has ranked and reputable universities, and the country has a friendly attitude and a welcoming environment with an education system in English. EverNest Consultants collaborates with accredited professionals to assist you in the admissions process, visa application, and Ireland's pre-arrival and post-arrival services.",
     sectionBackgroundImage: "/images/destinations/backgrounds/ireland-study-bg.jpg",
     backgroundImageAlt: "Coastal town and cathedral view in Ireland",
@@ -1162,6 +1184,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   malta: {
     name: "Malta",
+    metaDescription:
+      "Study in Malta from Pakistan — EU-recognised degrees, local-rate tuition from €2,000, and a 12-month post-study work permit.",
     heroDesc: "Malta has become one of the most sought after countries in Europe for its quality and reasonably priced tuition along with its Mediterranean lifestyle. Maltese visa 2025 provides the chance for Pakistani students to obtain a sought after European degree in a safe English-speaking country. EverNest Consultants provides personalized admission guidance as well as visa assistance and support after arrival to ensure the students have a seamless experience in Malta.",
     sectionBackgroundImage: "/images/destinations/backgrounds/malta-study-bg.jpg",
     backgroundImageAlt: "Mediterranean harbor and boats in Malta",
@@ -1271,6 +1295,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   uzbekistan: {
     name: "Uzbekistan",
+    metaDescription:
+      "Study in Uzbekistan from Pakistan — MBBS and engineering from $2,000 a year, no IELTS required, and WHO-listed universities.",
     heroDesc: "Uzbekistan has become one of the most affordable country options for Pakistani students in Medicine, Engineering, and Business, and is gaining international recognition. Studying in Uzbekistan for Pakistani students, you earn a degree that is both affordable and recognized globally, and the admission process is relatively hassle-free. Enjoying the combination of quality education and affordable living, students can benefit from English-taught courses as well as a safe and comfortable atmosphere. EverNest Consultants provides admission and visa services, along with post-arrival services, to ensure transparency.",
     sectionBackgroundImage: "/images/destinations/backgrounds/uzbekistan-study-bg.jpg",
     backgroundImageAlt: "Historic architecture and market scene in Uzbekistan",
@@ -1379,6 +1405,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   australia: {
     name: "Australia",
+    metaDescription:
+      "Study in Australia from Pakistan — the subclass 500 student visa, post-study work rights, and QS top-150 ranked universities.",
     heroDesc: "Australia is another popular and top-tier destination for international students, boasting world-class universities, unmatched natural landscapes, and robust work-visa pathways. Whether you're aiming for an undergraduate, master’s, or professional degree, studying in Australia sets you up for academic excellence and global opportunity.",
     homepageImage: "/images/destinations/homepage/australia-landmark.jpg",
     sectionBackgroundImage: "/images/destinations/backgrounds/australia-study-bg.jpg",
@@ -1465,6 +1493,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   malaysia: {
     name: "Malaysia",
+    metaDescription:
+      "Study in Malaysia from Pakistan — UK and Australian branch campuses, $3,000–7,000 tuition, and degrees taught fully in English.",
     heroDesc: "Malaysia is one of Asia’s fastest-growing education destinations, offering world-class universities, affordable tuition, and a vibrant cultural experience. It’s home to top-ranked local institutions as well as international branch campuses from the UK and Australia—meaning you can get a globally recognized degree at a fraction of the cost.",
     sectionBackgroundImage: "/images/destinations/backgrounds/malaysia-study-bg.jpg",
     backgroundImageAlt: "Petronas Towers skyline in Malaysia",
@@ -1555,6 +1585,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   spain: {
     name: "Spain",
+    metaDescription:
+      "Study in Spain from Pakistan — English-taught degrees, €3,000–10,000 tuition, and 20 hours a week work rights while you study.",
     heroDesc: "Spain has become one of Europe’s most popular study destinations for Pakistani students, offering world-class education, affordable tuition fees, and a vibrant lifestyle. With numerous English-taught programs and post-study opportunities, it provides an ideal balance between academic growth and cultural exploration.",
     sectionBackgroundImage: "/images/destinations/backgrounds/spain-study-bg.jpg",
     backgroundImageAlt: "Madrid city skyline in Spain",
@@ -1679,6 +1711,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   cyprus: {
     name: "Cyprus",
+    metaDescription:
+      "Study in Cyprus from Pakistan — English-taught EU degrees, low tuition and living costs, and IELTS often waived for English-medium students.",
     heroDesc: "Cyprus Study Visa is quickly becoming one of the most popular options for international students looking for affordable, high-quality education in Europe. Along with its stunning Mediterranean beaches, warm climate, and safe environment, Cyprus offers a relaxed lifestyle while giving access to recognized European degrees. Furthermore, being a part of the Schengen zone, the country is popular among students who wish to study in English and later explore career opportunities both in Cyprus and across the EU.",
     sectionBackgroundImage: "/images/destinations/backgrounds/cyprus-study-bg.jpg",
     backgroundImageAlt: "Seafront promenade and coastline in Cyprus",
@@ -1759,6 +1793,8 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
   },
   usa: {
     name: "USA",
+    metaDescription:
+      "Study in the USA from Pakistan — F-1 student visa support, OPT work authorisation, and admission to top-ranked American universities.",
     heroDesc: "The United States is the land of opportunity where people fulfil their dreams for a better standard of living. To start this journey of securing desired peace in your life, you can start the long journey by securing an American degree from a top institution. You can enroll in the graduate, undergraduate, or any other professional program, based on your preferences.",
     homepageImage: "/images/destinations/homepage/usa-landmark.jpg",
     sectionBackgroundImage: "/images/destinations/backgrounds/usa-study-bg.jpg",

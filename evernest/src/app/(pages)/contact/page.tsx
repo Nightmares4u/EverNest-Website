@@ -5,11 +5,21 @@ import { ContactInquiryForm } from "@/components/shared/ContactInquiryForm"
 import { buildMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact",
+  // This page draws the second-most impressions on the site at position ~11
+  // but had a 0% CTR over 90 days: it ranks for local "consultants in
+  // Karachi" intent while the old title just said "Contact". Title and
+  // description now answer that query instead.
+  title: "Contact Us — Karachi & Lahore Offices",
   description:
-    "Contact EverNest Consultants for study visa, immigration, and partnership inquiries by phone, WhatsApp, email, or office visit.",
+    "Visit or call EverNest Consultants in Karachi and Lahore for a free study visa and immigration consultation. 13+ years, British Council certified.",
   path: "/contact",
-  keywords: ["Contact EverNest Consultants", "consultation", "study visa inquiry", "immigration inquiry"],
+  keywords: [
+    "study visa consultants in Karachi",
+    "immigration consultants in Karachi",
+    "study visa consultants Lahore",
+    "Contact EverNest Consultants",
+    "free visa consultation Pakistan",
+  ],
 })
 
 export default function ContactPage() {

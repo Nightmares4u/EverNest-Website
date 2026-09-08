@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/privacy-policy",
     "/study-visas",
+    "/study-visa-consultants-karachi",
     "/immigration",
     "/b2b-partnerships",
     "/success-stories",

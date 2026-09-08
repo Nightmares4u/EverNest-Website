@@ -33,7 +33,7 @@ export async function generateMetadata({
     // Kept short: the layout appends " | EverNest Consultants", and Google
     // truncates around 60 characters.
     title: `Study in ${pageData.name} from Pakistan`,
-    description: getMetaDescription(pageData.heroDesc),
+    description: pageData.metaDescription ?? getMetaDescription(pageData.heroDesc),
     path: `/study-visas/${resolvedParams.country.toLowerCase()}`,
     keywords: [
       `Study in ${pageData.name} from Pakistan`,
