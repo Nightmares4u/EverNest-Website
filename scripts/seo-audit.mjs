@@ -12,8 +12,13 @@
  */
 
 const args = process.argv.slice(2);
-const baseFlag = args.indexOf("--base");
-const BASE = (baseFlag !== -1 && args[baseFlag + 1]) || "http://localhost:3900";
+const flag = (name, fallback) => {
+  const i = args.indexOf(name);
+  return i !== -1 && args[i + 1] ? args[i + 1] : fallback;
+};
+const BASE = flag("--base", "http://localhost:3900");
+/** Optional: write the full findings to a JSON file for the audit trail. */
+const JSON_OUT = flag("--json", null);
 const PROD_ORIGIN = "https://www.evernestconsultants.com";
 
 const errors = [];
@@ -185,6 +190,30 @@ async function main() {
     const body = await robotsRes.text();
     if (!/sitemap:/i.test(body))
       warn(`${BASE}/robots.txt`, "robots-no-sitemap", "robots.txt does not reference the sitemap");
+  }
+
+  if (JSON_OUT) {
+    const { writeFileSync, mkdirSync } = await import("node:fs");
+    const { dirname } = await import("node:path");
+    mkdirSync(dirname(JSON_OUT), { recursive: true });
+    writeFileSync(
+      JSON_OUT,
+      `${JSON.stringify(
+        {
+          // No timestamp here: the filename carries the date, and a changing
+          // field would make every run look like a diff.
+          base: BASE,
+          urlsChecked: sitemapUrls.length,
+          errorCount: errors.length,
+          warningCount: warnings.length,
+          errors,
+          warnings,
+        },
+        null,
+        2,
+      )}\n`,
+    );
+    console.log(`\nWrote findings to ${JSON_OUT}`);
   }
 
   const group = (list) => {
