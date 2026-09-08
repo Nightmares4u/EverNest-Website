@@ -101,7 +101,6 @@ function buildKarachiLocalBusinessSchema() {
         "Office #912 Portway Trade Center (PTC) - Business Center, SMCHS, Shahrah-e-Faisal",
       addressLocality: "Karachi",
       addressRegion: "Sindh",
-      postalCode: "75350",
       addressCountry: "PK",
     },
     areaServed: { "@type": "City", name: "Karachi" },
