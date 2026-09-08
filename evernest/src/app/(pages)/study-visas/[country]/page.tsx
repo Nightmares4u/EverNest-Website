@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { CheckCircle2, GraduationCap, Calendar, BookOpen, Globe, FileText, ArrowRight, DollarSign, Briefcase } from "lucide-react"
+import { CheckCircle2, GraduationCap, Calendar, BookOpen, Globe, FileText, ArrowRight, DollarSign, Briefcase, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FinalCTA } from "@/components/sections/FinalCTA"
 import { studyVisasData } from "@/data/study-visas"
-import type { StudyVisaCountryData } from "@/data/types"
+import type { StudyVisaCountryData, FaqItem } from "@/data/types"
 import { buildMetadata, getFirstSentence, absoluteUrl } from "@/lib/metadata"
 import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
 import { JsonLd } from "@/components/shared/JsonLd"
@@ -396,6 +396,26 @@ export default function StudyVisaCountryPage({ params }: { params: Promise<{ cou
                         ))}
                       </ul>
                     )}
+                  </div>
+                </div>
+              )}
+
+              {/* FAQs */}
+              {pageData.faq && pageData.faq.length > 0 && (
+                <div>
+                  <h2 className="text-3xl font-display font-bold text-brand-blue mb-8">Frequently Asked Questions</h2>
+                  <div className="space-y-4">
+                    {pageData.faq.map((faq: FaqItem, i: number) => (
+                      <details key={i} className="group bg-white rounded-xl border border-border-subtle overflow-hidden">
+                        <summary className="flex items-center justify-between p-5 cursor-pointer bg-white hover:bg-brand-ice/30 transition-colors list-none font-bold text-brand-blue">
+                          {faq.q}
+                          <ChevronDown className="h-5 w-5 text-brand-blue/50 group-open:rotate-180 transition-transform" />
+                        </summary>
+                        <div className="p-5 pt-0 text-foreground/70 text-sm leading-relaxed border-t border-border-subtle/50 mt-2">
+                          {faq.a}
+                        </div>
+                      </details>
+                    ))}
                   </div>
                 </div>
               )}

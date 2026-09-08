@@ -84,7 +84,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
     whyEvernest: {
       title: "How EverNest Consultants Can Help",
       desc: "Planning to study in Italy? Get expert guidance and reliable support from EverNest Consultants to start your journey with confidence. EverNest Consultants supports students planning to study in Italy with clear, structured guidance at every stage. We have years of experience as study abroad consultants in Karachi, and as Italy study visa consultants in Karachi, helping students with university choices, application submissions, and comprehensive visa document preparation while providing guidance on accuracy and process compliance."
-    }
+    },
+    faq: [
+      {
+        q: "Do I need to know Italian to study in Italy?",
+        a: "Not for English-taught programs. Italian universities offer a wide range of bachelor’s, master’s, and doctoral degrees in English, particularly in engineering, business, economics, medicine, and international relations. For these you need IELTS 6.0–6.5, TOEFL iBT 79–90, or Duolingo 100–110. If you choose an Italian-taught program, you will need B2 level Italian certified through CILS or CELI."
+      },
+      {
+        q: "What do I need for an Italy study visa?",
+        a: "Non-EU students apply for the Italian Type D National Visa. You will need a valid passport, university admission or pre-enrollment confirmation, proof of financial resources, proof of accommodation, and health insurance with at least €30,000 coverage. After you arrive, you must apply for your Permesso di Soggiorno (residence permit) within eight days."
+      },
+      {
+        q: "When should I apply for an intake in Italy?",
+        a: "The Fall intake in September/October is the main intake with the widest program availability. A smaller Spring intake runs in February/March for limited programs. Early planning matters for Pakistani students because visa appointments and document verification take time, so we recommend starting six to nine months ahead."
+      },
+      {
+        q: "Can I stay in Italy after I graduate?",
+        a: "Yes. After finishing your degree you can apply for a temporary stay permit that lets you look for work in Italy or elsewhere in the European Union. Because Italy is a Schengen country, your degree also gives you greater mobility across Europe."
+      }
+    ]
   },
   finland: {
     name: "Finland",
@@ -179,7 +197,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Licensed immigration support",
         "Pre-departure briefings & accommodation guidance"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "What English score do I need for Finland?",
+        a: "Most Finnish universities ask for IELTS 6.0+, TOEFL iBT 80+, or Duolingo 95+. If you can show proof of English-medium schooling, this requirement is often waived."
+      },
+      {
+        q: "How much does it cost to study in Finland?",
+        a: "Tuition ranges from €4,000 to €12,000 per year (roughly PKR 1,120,000–3,360,000) depending on the program and university. Living costs, covering rent, meals, and transport, run about €700–€1,200 per month (roughly PKR 210,000–360,000)."
+      },
+      {
+        q: "Can I work while studying in Finland?",
+        a: "Yes. International students can work up to 30 hours per week during the semester and full-time during holidays. This is one of the main reasons Pakistani students choose Finland, as part-time work helps cover living expenses while you gain experience."
+      },
+      {
+        q: "What happens after I graduate in Finland?",
+        a: "Graduates can extend their residence permit for two more years to look for work or start a business. After five years of uninterrupted residence you can apply for permanent residency, which opens the path to citizenship and long-term settlement in Europe."
+      }
+    ]
   },
   turkey: {
     name: "Turkey",
@@ -272,7 +308,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Visa file preparation and guidance via licensed experts.",
         "Pre‑departure briefings and accommodation assistance."
       ]
-    }
+    },
+    faq: [
+      {
+        q: "Is an IELTS score required to study in Turkey?",
+        a: "Requirements vary by university, but English-taught programs typically ask for IELTS 6.0+, TOEFL iBT 80+, or Duolingo 95+. English-taught degrees are widely available in Business, Engineering, Computer Science, and International Relations."
+      },
+      {
+        q: "How much does studying in Turkey cost?",
+        a: "Tuition generally runs $2,000–$9,000 per year (about PKR 560,000–2,520,000). Bachelor’s programs sit at roughly PKR 560,000–1,680,000 per year and master’s at PKR 840,000–2,520,000. Living costs are around $400–$800 per month (PKR 112,000–224,000) depending on the city."
+      },
+      {
+        q: "Are scholarships available for Pakistani students in Turkey?",
+        a: "Yes. Türkiye Bursları is the government scholarship and includes fully funded options. Many public and private universities also offer partial tuition waivers, and Erasmus+ exchanges are available at partner universities. EverNest helps you build a scholarship strategy and prepare the documentation."
+      },
+      {
+        q: "Can I work in Turkey during and after my studies?",
+        a: "You may work part-time during studies, subject to a permit, and full-time during official breaks, with typical wages around $4–$6 per hour depending on the city and role. After graduating you can apply for a residence permit to look for work, then move to a work permit once employed."
+      }
+    ]
   },
   germany: {
     name: "Germany",
@@ -376,7 +430,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Financial and visa file preparation support",
         "Pre-departure guidance for a smoother move to Germany"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "Is it true that German public universities charge no tuition?",
+        a: "Many public universities in Germany charge low or no tuition for international students, though you still pay a semester contribution. Private universities and specialized programs vary by institution. Your main budgeting consideration is living costs, which depend on the city, accommodation, health insurance, and transport."
+      },
+      {
+        q: "Do I need to learn German to study there?",
+        a: "Not for English-taught programs, which are a growing option especially at master’s level and in high-demand professional fields. Those accept IELTS, TOEFL, PTE, or an equivalent, and some universities waive testing based on prior English-medium education. German-taught programs require recognized proof such as TestDaF, DSH, or a Goethe-Zertifikat."
+      },
+      {
+        q: "Which intake should I apply for, and how early?",
+        a: "The Winter intake is the main one with the widest program availability, and a Summer intake runs at selected universities and programs. Start early: admission, APS and document checks, blocked account preparation, and visa appointments all take time."
+      },
+      {
+        q: "Can I work during my studies and stay after graduating?",
+        a: "International students may work part-time during studies under current German student residence rules. After completing your degree you may be eligible to remain in Germany to look for qualified employment, depending on your profile and the residence rules in force at the time."
+      }
+    ]
   },
   uae: {
     name: "United Arab Emirates",
@@ -472,7 +544,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Visa filing through RCIC/immigration experts",
         "Pre-departure briefings & accommodation guidance"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "What does it cost to study in the UAE?",
+        a: "Bachelor’s tuition typically runs AED 25,000–45,000 per year (approximately PKR 1.9–3.4 million) and master’s AED 35,000–60,000 per year (approximately PKR 2.6–4.6 million). Living expenses are around AED 3,000–5,000 per month (approximately PKR 220,000–370,000), varying by city and lifestyle."
+      },
+      {
+        q: "Do I need IELTS for UAE universities?",
+        a: "Most universities accept IELTS 6.0+, TOEFL iBT 80+, or Duolingo 95+. Some waive the requirement entirely if your previous education was in English. A wide range of bachelor’s and master’s programs are taught in English."
+      },
+      {
+        q: "How long does a UAE student visa take?",
+        a: "Processing usually takes two to four weeks. You receive your offer letter after paying the tuition deposit, then obtain a one-year renewable UAE student visa. You will need to submit financial documents, a sponsor letter, and health insurance."
+      },
+      {
+        q: "Can I work in the UAE while studying and after graduation?",
+        a: "Students can legally work 15–20 hours per week in approved roles, and most universities help arrange internships and part-time work aligned with your field. After graduating, the Golden Visa program and Employment Residence Permit options let you extend your stay and work in the UAE job market."
+      }
+    ]
   },
   canada: {
     name: "Canada",
@@ -548,7 +638,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
     whyEvernest: {
       title: "Why EverNest?",
       desc: "To carve out a path for your future as a student in Canada, EverNest Consultants is partnered up with RCIC Consultants to ensure you receive comprehensive on-the-ground support throughout your admission and immigration journey. Once we’re done with securing your admissions, EverNest will be your trusted consultant to file your Study Permit."
-    }
+    },
+    faq: [
+      {
+        q: "How many hours can international students work in Canada?",
+        a: "International students can work up to 24 hours per week during study terms and full-time during scheduled semester breaks."
+      },
+      {
+        q: "What English tests do Canadian universities accept?",
+        a: "Canadian institutions commonly accept IELTS, TOEFL, the Duolingo English Test, and PTE. French-language institutions may require TEF or TCF instead."
+      },
+      {
+        q: "Which intake should I target for Canada?",
+        a: "The Fall intake in September is the major one, with the widest program availability and the most scholarship opportunities. The Winter intake in January is the second most popular and still offers many courses. A Spring/Summer intake in May/June carries limited programs, often diplomas or short-term courses."
+      },
+      {
+        q: "Can I get PR after studying in Canada?",
+        a: "Canada offers well-established pathways from study to permanent residency. The Post-Graduation Work Permit (PGWP) lets graduates of Canadian institutions work in Canada for up to three years after finishing their degree, and that Canadian work experience supports a PR application. EverNest works with RCIC-licensed consultants for your Study Permit filing."
+      }
+    ]
   },
   georgia: {
     name: "Georgia",
@@ -621,7 +729,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
     whyEvernest: {
       title: "Why Choose EverNest?",
       desc: "At EverNest, we have multiple partnerships with leading universities in Georgia to help you obtain your Student Visa and secure your rightful spot at the heart of Europe."
-    }
+    },
+    faq: [
+      {
+        q: "Do I need IELTS to study in Georgia?",
+        a: "Most universities in Georgia do not require IELTS or TOEFL. For an English-taught program you usually just need to show you can communicate well in English, often through a short interview."
+      },
+      {
+        q: "Are Georgian medical degrees recognized internationally?",
+        a: "Yes. Universities such as Tbilisi State Medical University, Ilia State University, and Georgian Technical University offer degrees recognized by WHO, UNESCO, and other major international bodies."
+      },
+      {
+        q: "How much does studying medicine in Georgia cost?",
+        a: "Tuition for medical programs generally runs $4,000–$8,000 per year, and living costs average around $300–$500 per month. That makes Georgia considerably more budget-friendly than most of Europe without compromising on quality."
+      },
+      {
+        q: "What are the intake dates and what documents do I need?",
+        a: "The Fall intake in September–October is the most popular with more program options, and a Spring intake in February–March suits students who miss the fall deadline. You will need a completed application form, academic transcripts and certificates, a passport copy valid for at least one year, passport-sized photos, the application fee receipt, a Statement of Purpose if required, and a bank statement or sponsor letter showing funds for tuition and living."
+      }
+    ]
   },
   "united-kingdom": {
     name: "United Kingdom",
@@ -681,7 +807,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
       "Winter Intake (January / February): A great option if you miss September intake. Many Master’s programs and some Bachelor’s degrees are available. Applications open around June–September of the previous year",
       "Summer Intake (April / May Intake): Limited universities, mostly offering business, IT, and short courses. Applications usually open around September–December."
     ],
-    postStudy: "With the UK Graduate Route, also known as the UK Post Study Work Visa, international students can stay and work in the UK for up to 2 years."
+    postStudy: "With the UK Graduate Route, also known as the UK Post Study Work Visa, international students can stay and work in the UK for up to 2 years.",
+    faq: [
+      {
+        q: "What IELTS score do I need for a UK student visa?",
+        a: "Most universities ask for an overall IELTS band of 6.0–6.5 depending on the course. Many also accept PTE, TOEFL, Duolingo, or an MOI (Medium of Instruction) certificate instead."
+      },
+      {
+        q: "What grades do I need to apply to a UK university?",
+        a: "For undergraduate study you need 12 years of education (A-Levels, Intermediate, IB, or a High School Diploma), with minimum grades set by the university — usually 50–60% and above for average universities and higher for top-tier institutions. For a master’s you need a recognized bachelor’s degree (16 years of education) at roughly a UK 2:2 or 2:1 equivalent, around 55–60% and above."
+      },
+      {
+        q: "What documents do Pakistani students need for the UK student visa?",
+        a: "You will need a valid passport, your CAS (Confirmation of Acceptance for Studies) from a recognized UK university, academic records, a bank statement showing sufficient funds for tuition plus living costs, a TB test certificate, and payment of the visa application fee and the Immigration Health Surcharge (IHS)."
+      },
+      {
+        q: "Can I work in the UK after finishing my degree?",
+        a: "Yes. The UK Graduate Route, also known as the Post Study Work Visa, lets international students stay and work in the UK for up to two years after graduating."
+      }
+    ]
   },
   azerbaijan: {
     name: "Azerbaijan",
@@ -772,7 +916,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Licensed immigration guidance",
         "Pre-departure and accommodation assistance"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "How affordable is studying in Azerbaijan?",
+        a: "Public universities charge roughly $2,000–$4,500 per year for a bachelor’s (about PKR 560,000–1,250,000) and $3,000–$5,000 for a master’s (about PKR 840,000–1,400,000). Living expenses run $300–$600 per month (PKR 84,000–170,000), covering accommodation, transport, and meals."
+      },
+      {
+        q: "Are degrees taught in English in Azerbaijan?",
+        a: "Yes. Universities including ADA University, Khazar University, and Baku State University offer entire degrees in English. You will generally need IELTS 6.0+, TOEFL 80+, or Duolingo 95+, though proof of English-medium education may also be accepted."
+      },
+      {
+        q: "How long does the Azerbaijan student visa take?",
+        a: "Visa decisions typically take about three to five weeks. After your admission offer you confirm your place and pay the first tuition installment, then submit your passport, invitation letter, bank statement, and proof of accommodation through the relevant Azerbaijan visa processing channel in Pakistan."
+      },
+      {
+        q: "Can I work in Azerbaijan while studying?",
+        a: "Yes. Students can work 20 hours per week during the academic year and full-time during breaks, commonly in retail, tourism, and university offices, which helps cover living expenses. After graduating you can continue working on an Employment Residence Permit and, with continuous employment, qualify for long-term residency."
+      }
+    ]
   },
   france: {
     name: "France",
@@ -868,7 +1030,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Licensed immigration support",
         "Pre-departure and accommodation guidance"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "Do I need to speak French to study in France?",
+        a: "Not for English-taught programs — hundreds of bachelor’s and master’s degrees are offered fully in English. For those you need IELTS 6.0+, TOEFL iBT 80+, or Duolingo 95+. French-taught courses require DELF or TCF certification at B2 level."
+      },
+      {
+        q: "How much is tuition in France?",
+        a: "Public universities are government-subsidized, keeping tuition between €2,700 and €3,800 per year. In rupee terms that is roughly PKR 820,000–1,200,000 per year for a bachelor’s and PKR 1,100,000–2,400,000 for a master’s. Living costs run PKR 210,000–360,000 per month, with Paris at the higher end."
+      },
+      {
+        q: "What is the France student visa process?",
+        a: "Secure your admission and pay the initial tuition fee, register through Campus France and book your visa appointment, then prepare your documents including a bank statement, insurance with €30,000 coverage, and accommodation proof. Visa decisions normally arrive within three to six weeks."
+      },
+      {
+        q: "Can I work in France during and after my studies?",
+        a: "Students may work 20 hours per week during semesters and full-time during breaks, with average pay between €9 and €12 per hour. After graduating you can stay up to two years to work and gain experience, and five years of continuous residence can lead to permanent residency and later citizenship eligibility."
+      }
+    ]
   },
   ireland: {
     name: "Ireland",
@@ -960,7 +1140,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Visa filing through licensed immigration experts",
         "Pre-departure briefings & accommodation guidance"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "What English score do Irish universities require?",
+        a: "Typically a minimum of IELTS 6.0–6.5, TOEFL iBT 80–90, or Duolingo 95+. English is the language of instruction for all bachelor’s and master’s programs in Ireland, so Pakistani students do not face a language barrier."
+      },
+      {
+        q: "What does it cost to study in Ireland?",
+        a: "Tuition ranges from €9,000 to €25,000 per year (PKR 2,520,000–7,000,000) depending on the university and degree. Living costs are around €700–€1,200 per month (PKR 210,000–360,000) depending on your location and lifestyle."
+      },
+      {
+        q: "How do I apply for the Ireland student visa?",
+        a: "Get your admission letter and pay your first tuition deposit, then gather your passport, acceptance letter, a bank statement showing over €7,000 for living expenses, and medical insurance. Apply for the Type D student visa through the AVATS online system and attend a biometric appointment at the VFS office. Decisions typically take four to eight weeks."
+      },
+      {
+        q: "Can I stay and work in Ireland after graduating?",
+        a: "Yes. The Third Level Graduate Scheme lets international graduates stay two years to gain work experience. You may work 20 hours per week during term and full-time during holidays while studying. After five years of legal stay — which includes time on a post-study work visa — you can apply for permanent residency."
+      }
+    ]
   },
   malta: {
     name: "Malta",
@@ -1051,7 +1249,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Professional immigration support for visa filing",
         "Briefing aid for the departing and planning for accommodation"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "How much does it cost to study in Malta?",
+        a: "Tuition runs €2,000–€10,000 per year (PKR 560,000–2,800,000) depending on the course and institution. Pakistani students pay the same tuition as local students, which makes Malta one of the more affordable European destinations. Living costs of €700–€1,000 per month (PKR 200,000–280,000) cover boarding, travel, and food."
+      },
+      {
+        q: "What are the English and academic requirements for Malta?",
+        a: "You will generally need IELTS 6.0, TOEFL iBT 80, or Duolingo 95, and students from certain countries may apply for a waiver. For undergraduate study you need HSC or A-Levels with an aggregate of at least 60%. Master’s applicants need a bachelor’s in a relevant discipline, and some programs such as an MBA may require work experience."
+      },
+      {
+        q: "How does the Malta student visa process work?",
+        a: "Secure your admission letter and settle the initial tuition fee, then prepare your visa file with your passport, acceptance letter, a bank statement showing a balance over €12,000, and proof of accommodation. Most applicants receive a decision within four to six weeks. After arrival you must register with Identity Malta to receive your residence permit."
+      },
+      {
+        q: "Can I work in Malta during and after my studies?",
+        a: "Students may work up to 20 hours per week during term and full-time during holidays. After graduating, the post-study work permit gives you 12 months to find work or gain experience, and after five years of residence — including study and work — you can apply for permanent residency or citizenship."
+      }
+    ]
   },
   uzbekistan: {
     name: "Uzbekistan",
@@ -1141,7 +1357,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Visa filing through our immigration expert partners",
         "Accommodation arrangements and pre-departure briefings"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "Is IELTS required to study in Uzbekistan?",
+        a: "For the majority of English-taught courses there is no IELTS or TOEFL requirement. The admission process is generally hassle-free, with no entrance examinations in most cases and relatively little documentation."
+      },
+      {
+        q: "Are Uzbek medical degrees recognized worldwide?",
+        a: "Yes. Institutions such as Tashkent Medical Academy, Samarkand State Medical University, and Bukhara State University appear in the WHO and UNESCO listings, so their degrees carry international recognition."
+      },
+      {
+        q: "What does studying in Uzbekistan cost?",
+        a: "Tuition runs $2,000–$5,000 per year (PKR 560,000–1,400,000) depending on the course and university, making it one of the most affordable options in Asia. Living costs of $320–$650 per month (PKR 90,000–180,000) cover housing, meals, and transport."
+      },
+      {
+        q: "How long does the Uzbekistan student visa take?",
+        a: "Processing normally takes three to four weeks. After admission approval you receive an official university invitation letter, then apply through the embassy or the online portal with your passport, bank statement, invitation letter, and medical certificate. Once approved you travel to Uzbekistan and register at your university."
+      }
+    ]
   },
   australia: {
     name: "Australia",
@@ -1209,7 +1443,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
     whyEvernest: {
       title: "Why EverNest?",
       desc: "EverNest Consultants is your go-to trusted consultant to guide you throughout the entire process."
-    }
+    },
+    faq: [
+      {
+        q: "Which English tests do Australian universities accept?",
+        a: "Non-native English speakers generally prove proficiency through IELTS, TOEFL, PTE, or Duolingo. The exact test and score depend on the individual university’s requirements."
+      },
+      {
+        q: "What are the intake dates for Australia?",
+        a: "Australia offers flexible intakes. February (Autumn) is the most common, with the highest number of courses, admissions, and scholarships. July (Winter) is the second most popular with a wide course selection. November (Spring/Summer) carries limited programs."
+      },
+      {
+        q: "What is the subclass 500 visa?",
+        a: "Subclass 500 is Australia’s student visa. Holders can go on to apply for Australia’s post-study work visa, which often allows graduates to stay and work in the country for years after finishing their degree."
+      },
+      {
+        q: "What academic requirements do I need for Australia?",
+        a: "For undergraduate study you need high school completion with strong grades. Master’s programs require a bachelor’s degree, and some ask for GRE or GMAT. PhD applicants need a master’s degree, a research proposal, and alignment with a faculty supervisor, with some programs requiring the GRE."
+      }
+    ]
   },
   malaysia: {
     name: "Malaysia",
@@ -1281,7 +1533,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
     whyEvernest: {
       title: "Why Choose EverNest?",
       desc: "At EverNest, we partner with leading universities in Malaysia to guide you through your application, secure your admission, and make your relocation as smooth as possible. We’ll help you choose the right intake, gather all your documents, and make sure you arrive in Malaysia ready for an amazing academic journey."
-    }
+    },
+    faq: [
+      {
+        q: "Do I need IELTS to study in Malaysia?",
+        a: "IELTS or TOEFL may be required for certain programs, but many universities accept proof of English-medium education instead. English is widely spoken in Malaysia and most university-level programs are taught entirely in English."
+      },
+      {
+        q: "How much does studying in Malaysia cost?",
+        a: "Tuition is typically $3,000–$7,000 per year and living costs average around $300–$500 per month, making Malaysia one of the most budget-friendly study destinations in Asia."
+      },
+      {
+        q: "Are Malaysian degrees recognized internationally?",
+        a: "Yes. Malaysian universities are recognized worldwide and many rank in the QS World University Rankings, including University of Malaya (UM) and Taylor’s University. Malaysia also hosts international branch campuses of UK and Australian universities, so you can earn a globally recognized degree at a fraction of the cost."
+      },
+      {
+        q: "When are the intakes and what documents do I need?",
+        a: "Most Malaysian universities run two main intakes: February/March for first-semester starts, and the larger July/September intake with more options. You will need a completed application form, academic transcripts and certificates, a passport copy valid for at least 18 months, passport-sized photos, a Statement of Purpose if required, the application fee receipt, and proof of funds covering tuition and living costs."
+      }
+    ]
   },
   spain: {
     name: "Spain",
@@ -1387,7 +1657,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
         "Visa filing through RCIC/immigration experts",
         "Pre-departure briefings & accommodation guidance"
       ]
-    }
+    },
+    faq: [
+      {
+        q: "Do I need Spanish to study in Spain?",
+        a: "Not for English-taught programs, which are widely available and remove the language barrier for Pakistani students. Those require IELTS 6.0+, TOEFL iBT 80+, or Duolingo 95+. Spanish-taught programs require DELE B2 or an equivalent certification."
+      },
+      {
+        q: "What does it cost to study in Spain?",
+        a: "Tuition ranges from €3,000 to €10,000 per year (PKR 900,000–3,000,000) — roughly PKR 900,000–2,100,000 annually for a bachelor’s and PKR 1,500,000–3,000,000 for a master’s. Monthly living expenses average €700–€1,200 (PKR 210,000–360,000)."
+      },
+      {
+        q: "How long does the Spain student visa take?",
+        a: "A decision on the Spanish Type D Student Visa typically takes four to eight weeks. You will need your passport and photos, offer letter and tuition receipt, a bank statement or sponsor letter, proof of accommodation, a police certificate, and medical insurance with €30,000 coverage, submitted with biometrics at the relevant Spanish visa processing office in Pakistan."
+      },
+      {
+        q: "Can I work in Spain while studying and after graduating?",
+        a: "You can work up to 20 hours per week during classes and full-time during holidays, with average wages of €8–€12 per hour depending on city and job type. Graduates can extend their stay up to one year to look for work, then apply for a work residence card once employed. Five years of continuous residence can qualify you for long-term residency."
+      }
+    ]
   },
   cyprus: {
     name: "Cyprus",
@@ -1449,7 +1737,25 @@ export const studyVisasData: Record<string, StudyVisaCountryData> = {
     whyEvernest: {
       title: "Why EverNest?",
       desc: "Once your admission is confirmed, EverNest will guide you step-by-step with your student visa process, ensuring smooth arrival and settlement in Cyprus."
-    }
+    },
+    faq: [
+      {
+        q: "Is IELTS required to study in Cyprus?",
+        a: "IELTS, TOEFL, or an equivalent is commonly asked for, but the requirement is often waived if your previous education was in English. A large number of degree programs, especially at private universities, are taught entirely in English."
+      },
+      {
+        q: "What are the academic requirements for Cyprus universities?",
+        a: "For undergraduate study you need a high school diploma or equivalent, with minimum GPA requirements varying by university. Master’s programs require a bachelor’s degree from a recognized institution, and some ask for relevant work experience. PhD applicants need a master’s in a related field, a research proposal, and alignment with a faculty supervisor."
+      },
+      {
+        q: "When are the intakes in Cyprus?",
+        a: "The Fall intake in September is the main one with the largest selection of programs. A Spring intake in February suits students who miss the fall deadline, and a Summer intake in June/July offers limited programs, often short courses or diplomas."
+      },
+      {
+        q: "What documents do I need to apply to study in Cyprus?",
+        a: "You will need a completed application form, academic transcripts and certificates, a Statement of Purpose, a copy of your passport, two to three letters of recommendation for postgraduate programs, a CV or resume for postgraduate applicants, and financial proof such as a bank statement or sponsorship letter showing funds for tuition and living expenses."
+      }
+    ]
   },
   usa: {
     name: "USA",
