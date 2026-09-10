@@ -1,4 +1,5 @@
 import { siteConfig } from "@/data/site"
+import type { MediaFeature } from "@/data/media"
 import type { FaqItem } from "@/data/types"
 
 import { SITE_URL, absoluteUrl } from "./metadata"
@@ -120,6 +121,35 @@ export function buildFaqSchema(faq: FaqItem[], pageUrl: string) {
         text: item.a,
       },
     })),
+  }
+}
+
+/**
+ * VideoObject schema for an embedded YouTube video.
+ *
+ * `uploadDate` is required by Google and must be the video's real upload date,
+ * so this returns null rather than emitting markup for a video missing it.
+ * Most of these are guest appearances on other people's shows, so `author`
+ * credits the publishing channel — we describe the video, we do not claim it.
+ */
+export function buildVideoSchema(video: MediaFeature, pageUrl: string) {
+  if (!video.videoId || !video.uploadDate) return null
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "@id": `${pageUrl}#video-${video.id}`,
+    name: video.title,
+    description: video.description,
+    thumbnailUrl: `https://i.ytimg.com/vi/${video.videoId}/hqdefault.jpg`,
+    uploadDate: video.uploadDate,
+    ...(video.duration ? { duration: video.duration } : {}),
+    embedUrl: `https://www.youtube.com/embed/${video.videoId}`,
+    contentUrl: `https://www.youtube.com/watch?v=${video.videoId}`,
+    ...(video.channelName
+      ? { author: { "@type": "Organization", name: video.channelName } }
+      : {}),
+    publisher: { "@id": `${SITE_URL}/#organization` },
   }
 }
 
