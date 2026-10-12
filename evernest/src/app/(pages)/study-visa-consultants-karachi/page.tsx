@@ -15,9 +15,9 @@ import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
 const PATH = "/study-visa-consultants-karachi"
 
 export const metadata: Metadata = buildMetadata({
-  title: "Study Visa Consultants in Karachi",
+  title: "Study Abroad & Study Visa Consultants in Karachi",
   description:
-    "Visit EverNest Consultants at Portway Trade Center, Shahrah-e-Faisal for free study visa and immigration guidance. 13+ years, British Council certified.",
+    "Choosing study abroad consultants in Karachi? Get a free profile evaluation at EverNest, Shahrah-e-Faisal. 13+ years, British Council certified.",
   path: PATH,
   keywords: [
     "study visa consultants in Karachi",
@@ -56,7 +56,38 @@ const services = [
   },
 ]
 
+const selectionCriteria = [
+  {
+    title: "Check who they are accredited by",
+    desc: "Ask which bodies certify the consultancy and verify it with the body directly. Our affiliations are listed at the top of this page and on our credentials page.",
+  },
+  {
+    title: "Ask how they choose universities",
+    desc: "A good consultant starts from your grades, budget, and career goal, and can explain why each university is on your shortlist. Be wary of anyone who names a single university before reading your transcripts.",
+  },
+  {
+    title: "Get the scope of service in writing",
+    desc: "Know exactly what is covered: admissions, visa filing, interview preparation, pre-departure support. Ask what happens if an application is refused.",
+  },
+  {
+    title: "Ask about past cases for your destination",
+    desc: "Visa rules differ by country. Ask for recent outcomes for the country and course level you are applying to, and read our success stories for examples.",
+  },
+  {
+    title: "Visit the office in person",
+    desc: "A registered office with named advisors you can meet is a basic test of accountability. Ours is on Shahrah-e-Faisal, and the first evaluation is free.",
+  },
+]
+
 const faq: FaqItem[] = [
+  {
+    q: "How do I choose a study abroad consultant in Karachi?",
+    a: "Compare consultants on accreditation, how they build your university shortlist, what is written into the service scope, and their experience with your target country. Visit the office and meet the advisor who will handle your file before you pay anything.",
+  },
+  {
+    q: "What does a study abroad consultant do for Karachi students?",
+    a: "A consultant evaluates your profile, shortlists universities and courses, prepares admission applications and your Statement of Purpose, files the student visa, and briefs you before departure. The final decision on admission and visa always rests with the university and the embassy.",
+  },
   {
     q: "Where is the EverNest Consultants office in Karachi?",
     a: `Our Karachi office is at ${siteConfig.pakistanOffice.address} It sits on Shahrah-e-Faisal in SMCHS, which is reachable from most parts of the city. Call or WhatsApp ${siteConfig.contact.phone} before visiting so an advisor is free when you arrive.`,
@@ -196,6 +227,34 @@ export default function StudyVisaConsultantsKarachiPage() {
                     North America and Europe, so your case stays supported after you fly out.
                   </p>
                 </div>
+              </div>
+
+              {/* Selection criteria */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-brand-blue mb-3">
+                  How to choose study abroad consultants in Karachi
+                </h2>
+                <p className="text-foreground/70 mb-6 leading-relaxed">
+                  Karachi has many consultancies, and the fee you pay matters less than what you
+                  get for it. Use these five checks on any consultant you are considering,
+                  including us.
+                </p>
+                <ol className="space-y-4">
+                  {selectionCriteria.map((item, i) => (
+                    <li
+                      key={item.title}
+                      className="bg-white p-6 rounded-xl border border-border-subtle shadow-sm flex gap-4"
+                    >
+                      <span className="h-8 w-8 flex-shrink-0 rounded-full bg-brand-blush text-brand-red font-bold flex items-center justify-center">
+                        {i + 1}
+                      </span>
+                      <div>
+                        <h3 className="font-bold text-brand-blue mb-2">{item.title}</h3>
+                        <p className="text-foreground/70 text-sm leading-relaxed">{item.desc}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
               </div>
 
               {/* Services */}
