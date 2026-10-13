@@ -197,7 +197,7 @@ export function ContactInquiryForm() {
           </Button>
           <p className="text-xs text-center text-foreground/50">
             Your message will open in WhatsApp to
-            <span className="font-medium"> +92 370 1345846</span> for review
+            <span className="font-medium"> +92 310 1076201</span> for review
             before you send it.
           </p>
         </div>
