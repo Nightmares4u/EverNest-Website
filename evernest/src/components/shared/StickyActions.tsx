@@ -3,6 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { siteConfig } from "@/data/site"
+import { trackEvent } from "@/lib/analytics"
 import { MessageCircle, FileText } from "lucide-react"
 
 export function StickyActions() {
@@ -21,6 +22,7 @@ export function StickyActions() {
         href={`https://wa.me/${siteConfig.contact.whatsapp}`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackEvent("whatsapp_open", { source: "sticky_button" })}
         className="flex h-12 w-12 items-center justify-center gap-2 rounded-full bg-[#25D366] text-white shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 sm:h-14 sm:w-auto sm:px-6"
         aria-label="Contact us on WhatsApp"
       >

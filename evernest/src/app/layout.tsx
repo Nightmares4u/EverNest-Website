@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Manrope, Playfair_Display } from "next/font/google"
 
+import { AnalyticsScript } from "@/components/shared/AnalyticsScript"
 import { Footer } from "@/components/shared/Footer"
 import { Header } from "@/components/shared/Header"
 import { JsonLd } from "@/components/shared/JsonLd"
@@ -79,6 +80,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <StickyActions />
+        <AnalyticsScript />
       </body>
     </html>
   );
