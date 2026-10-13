@@ -3,6 +3,7 @@
 import * as React from "react"
 
 import { Button } from "@/components/ui/button"
+import { trackEvent } from "@/lib/analytics"
 import { buildInquiryMessage, buildWhatsAppHref } from "@/lib/contact"
 
 const services = [
@@ -41,6 +42,8 @@ export function ContactInquiryForm() {
       return
     }
 
+    trackEvent("contact_form_submit", { source: "contact_form" })
+    trackEvent("whatsapp_open", { source: "contact_form" })
     window.open(buildWhatsAppHref(inquiryMessage), "_blank", "noopener,noreferrer")
   }
 

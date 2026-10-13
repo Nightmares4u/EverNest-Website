@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react"
 import { siteConfig } from "@/data/site"
 import { ContactInquiryForm } from "@/components/shared/ContactInquiryForm"
+import { ContactPageView } from "@/components/shared/ContactPageView"
+import { TrackedWhatsAppLink } from "@/components/shared/TrackedWhatsAppLink"
 import { buildMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = buildMetadata({
@@ -25,6 +27,7 @@ export const metadata: Metadata = buildMetadata({
 export default function ContactPage() {
   return (
     <>
+      <ContactPageView />
       <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-brand-ice overflow-hidden relative">
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl">
@@ -70,9 +73,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-bold text-brand-blue">WhatsApp Inquiries</div>
-                      <a href={`https://wa.me/${siteConfig.contact.whatsapp}`} className="text-foreground/70 hover:text-brand-red transition-colors">
+                      <TrackedWhatsAppLink source="contact_page" href={`https://wa.me/${siteConfig.contact.whatsapp}`} className="text-foreground/70 hover:text-brand-red transition-colors">
                         {siteConfig.contact.whatsappDisplay}
-                      </a>
+                      </TrackedWhatsAppLink>
                     </div>
                   </div>
 
