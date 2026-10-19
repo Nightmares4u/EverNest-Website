@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-12",
+  "generated_at": "2026-10-19",
   "site": "https://www.evernestconsultants.com/",
   "windows": {
     "last_28_days": {
-      "start": "2026-09-14",
-      "end": "2026-10-12",
+      "start": "2026-09-21",
+      "end": "2026-10-19",
       "totals": {
-        "clicks": 24,
-        "impressions": 2559,
-        "ctr": 0.009378663540445486,
-        "position": 7.7092614302461895
+        "clicks": 26,
+        "impressions": 5295,
+        "ctr": 0.004910292728989613,
+        "position": 6.579036827195467
       },
       "top_queries": [
         {
@@ -17,18 +17,9 @@
             "evernest consultants"
           ],
           "clicks": 9,
-          "impressions": 53,
-          "ctr": 0.16981132075471697,
-          "position": 1.6981132075471699
-        },
-        {
-          "keys": [
-            "everest consultancy"
-          ],
-          "clicks": 1,
-          "impressions": 1,
-          "ctr": 1,
-          "position": 3
+          "impressions": 59,
+          "ctr": 0.15254237288135594,
+          "position": 1.694915254237288
         },
         {
           "keys": [
@@ -50,12 +41,48 @@
         },
         {
           "keys": [
+            "04371852777"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "keys": [
+            "05038160075"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 15
+        },
+        {
+          "keys": [
             "05057833715"
           ],
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 9
+        },
+        {
+          "keys": [
+            "0556210853"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 25
+        },
+        {
+          "keys": [
+            "08029307756"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
         },
         {
           "keys": [
@@ -68,6 +95,15 @@
         },
         {
           "keys": [
+            "7212249711"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        },
+        {
+          "keys": [
             "927743408"
           ],
           "clicks": 0,
@@ -77,21 +113,84 @@
         },
         {
           "keys": [
-            "best consultant in karachi"
+            "9307066555"
           ],
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 68
+          "position": 9
         },
         {
           "keys": [
-            "best study abroad consultants in karachi"
+            "9427455388"
           ],
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 109
+          "position": 9
+        },
+        {
+          "keys": [
+            "981073666"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "keys": [
+            "981287748"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "keys": [
+            "981448261"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "keys": [
+            "981716395"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "keys": [
+            "9898460775"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "keys": [
+            "9925221863"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "keys": [
+            "9969317893"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
         },
         {
           "keys": [
@@ -104,21 +203,12 @@
         },
         {
           "keys": [
-            "consultants in karachi"
+            "consultants in pakistan"
           ],
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 41
-        },
-        {
-          "keys": [
-            "consultants in pakistan"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 62
+          "position": 63
         },
         {
           "keys": [
@@ -146,152 +236,62 @@
           "impressions": 1,
           "ctr": 0,
           "position": 63
-        },
-        {
-          "keys": [
-            "etudes en france pakistan"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 51
-        },
-        {
-          "keys": [
-            "europe study visa from pakistan"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 29
-        },
-        {
-          "keys": [
-            "europe study visa price in pakistan"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 15.5
-        },
-        {
-          "keys": [
-            "evernesr"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        },
-        {
-          "keys": [
-            "evernest"
-          ],
-          "clicks": 0,
-          "impressions": 19,
-          "ctr": 0,
-          "position": 3.789473684210526
-        },
-        {
-          "keys": [
-            "france visa ratio for pakistani students"
-          ],
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 47
-        },
-        {
-          "keys": [
-            "how to study in the uk from pakistan"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 90
-        },
-        {
-          "keys": [
-            "malta visit visa from pakistan"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 59
-        },
-        {
-          "keys": [
-            "pakistan intermediate equivalent in uk"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 28
-        },
-        {
-          "keys": [
-            "portway trade center"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 1
         }
       ],
       "top_pages": [
         {
           "keys": [
-            "https://www.evernestconsultants.com/"
+            "https://www.evernestconsultants.com/contact"
           ],
-          "clicks": 12,
-          "impressions": 155,
-          "ctr": 0.07741935483870968,
-          "position": 7.258064516129032
+          "clicks": 13,
+          "impressions": 4954,
+          "ctr": 0.0026241421073879695,
+          "position": 5.991118288251918
         },
         {
           "keys": [
-            "https://www.evernestconsultants.com/contact"
+            "https://www.evernestconsultants.com/"
           ],
-          "clicks": 9,
-          "impressions": 2191,
-          "ctr": 0.004107713372889092,
-          "position": 6.044272021907805
+          "clicks": 11,
+          "impressions": 156,
+          "ctr": 0.07051282051282051,
+          "position": 6.8076923076923075
+        },
+        {
+          "keys": [
+            "https://www.evernestconsultants.com/success-stories"
+          ],
+          "clicks": 2,
+          "impressions": 38,
+          "ctr": 0.05263157894736842,
+          "position": 5.631578947368421
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/immigration/usa-work-permit"
           ],
           "clicks": 1,
-          "impressions": 5,
-          "ctr": 0.2,
+          "impressions": 6,
+          "ctr": 0.16666666666666666,
           "position": 11
         },
         {
           "keys": [
-            "https://www.evernestconsultants.com/study-visa-consultants-karachi"
+            "https://www.evernestconsultants.com/study-visas"
           ],
           "clicks": 1,
-          "impressions": 68,
-          "ctr": 0.014705882352941176,
-          "position": 19.808823529411764
-        },
-        {
-          "keys": [
-            "https://www.evernestconsultants.com/success-stories"
-          ],
-          "clicks": 1,
-          "impressions": 31,
-          "ctr": 0.03225806451612903,
-          "position": 6.032258064516129
+          "impressions": 66,
+          "ctr": 0.015151515151515152,
+          "position": 10.757575757575758
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/about/credentials"
           ],
           "clicks": 0,
-          "impressions": 10,
+          "impressions": 12,
           "ctr": 0,
-          "position": 6.6
+          "position": 10.583333333333334
         },
         {
           "keys": [
@@ -307,18 +307,18 @@
             "https://www.evernestconsultants.com/b2b-partnerships"
           ],
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 12,
           "ctr": 0,
-          "position": 4.888888888888889
+          "position": 6.166666666666667
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/immigration"
           ],
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "position": 4.166666666666666
+          "position": 4.285714285714286
         },
         {
           "keys": [
@@ -343,9 +343,9 @@
             "https://www.evernestconsultants.com/immigration/express-entry"
           ],
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 10,
           "ctr": 0,
-          "position": 11.636363636363637
+          "position": 12
         },
         {
           "keys": [
@@ -361,36 +361,36 @@
             "https://www.evernestconsultants.com/immigration/united-states"
           ],
           "clicks": 0,
-          "impressions": 11,
+          "impressions": 7,
           "ctr": 0,
-          "position": 29.363636363636363
+          "position": 41
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/privacy-policy"
           ],
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 7,
           "ctr": 0,
-          "position": 23.11111111111111
+          "position": 10
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/resources/country-comparison"
           ],
           "clicks": 0,
-          "impressions": 18,
+          "impressions": 14,
           "ctr": 0,
-          "position": 9.555555555555555
+          "position": 9.428571428571429
         },
         {
           "keys": [
-            "https://www.evernestconsultants.com/study-visas"
+            "https://www.evernestconsultants.com/study-visa-consultants-karachi"
           ],
           "clicks": 0,
-          "impressions": 69,
+          "impressions": 61,
           "ctr": 0,
-          "position": 11.434782608695652
+          "position": 15.491803278688524
         },
         {
           "keys": [
@@ -399,7 +399,7 @@
           "clicks": 0,
           "impressions": 7,
           "ctr": 0,
-          "position": 29
+          "position": 17.285714285714285
         },
         {
           "keys": [
@@ -415,45 +415,45 @@
             "https://www.evernestconsultants.com/study-visas/finland"
           ],
           "clicks": 0,
-          "impressions": 14,
+          "impressions": 16,
           "ctr": 0,
-          "position": 7.785714285714286
+          "position": 7.875
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visas/france"
           ],
           "clicks": 0,
-          "impressions": 51,
+          "impressions": 44,
           "ctr": 0,
-          "position": 17.313725490196077
+          "position": 19.818181818181817
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visas/georgia"
           ],
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 5,
           "ctr": 0,
-          "position": 19.666666666666668
+          "position": 23
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visas/germany"
           ],
           "clicks": 0,
-          "impressions": 12,
+          "impressions": 7,
           "ctr": 0,
-          "position": 20.75
+          "position": 8.571428571428571
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visas/italy"
           ],
           "clicks": 0,
-          "impressions": 21,
+          "impressions": 17,
           "ctr": 0,
-          "position": 29.142857142857142
+          "position": 25.235294117647058
         },
         {
           "keys": [
@@ -467,13 +467,13 @@
       ]
     },
     "last_90_days": {
-      "start": "2026-07-14",
-      "end": "2026-10-12",
+      "start": "2026-07-21",
+      "end": "2026-10-19",
       "totals": {
-        "clicks": 74,
-        "impressions": 3848,
-        "ctr": 0.019230769230769232,
-        "position": 11.14864864864865
+        "clicks": 78,
+        "impressions": 6729,
+        "ctr": 0.0115916183682568,
+        "position": 9.044583147570219
       },
       "top_queries": [
         {
@@ -481,18 +481,9 @@
             "evernest consultants"
           ],
           "clicks": 32,
-          "impressions": 232,
-          "ctr": 0.13793103448275862,
-          "position": 2.237068965517241
-        },
-        {
-          "keys": [
-            "evernest"
-          ],
-          "clicks": 3,
-          "impressions": 80,
-          "ctr": 0.0375,
-          "position": 2.825
+          "impressions": 239,
+          "ctr": 0.13389121338912133,
+          "position": 2.217573221757322
         },
         {
           "keys": [
@@ -502,6 +493,15 @@
           "impressions": 3,
           "ctr": 0.6666666666666666,
           "position": 1.3333333333333333
+        },
+        {
+          "keys": [
+            "evernest"
+          ],
+          "clicks": 2,
+          "impressions": 77,
+          "ctr": 0.025974025974025976,
+          "position": 3.012987012987013
         },
         {
           "keys": [
@@ -541,6 +541,24 @@
         },
         {
           "keys": [
+            "04371852777"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "keys": [
+            "05038160075"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 15
+        },
+        {
+          "keys": [
             "05057833715"
           ],
           "clicks": 0,
@@ -550,12 +568,39 @@
         },
         {
           "keys": [
+            "0556210853"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 25
+        },
+        {
+          "keys": [
+            "08029307756"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "keys": [
             "3285623718"
           ],
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 9
+        },
+        {
+          "keys": [
+            "7212249711"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
         },
         {
           "keys": [
@@ -577,88 +622,7 @@
         },
         {
           "keys": [
-            "ae nest"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 48
-        },
-        {
-          "keys": [
-            "b2b is"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 2
-        },
-        {
-          "keys": [
-            "best consultancy in karachi"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 70
-        },
-        {
-          "keys": [
-            "best consultant in karachi"
-          ],
-          "clicks": 0,
-          "impressions": 6,
-          "ctr": 0,
-          "position": 66.5
-        },
-        {
-          "keys": [
-            "best consultants in karachi"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 67
-        },
-        {
-          "keys": [
-            "best study abroad consultants in karachi"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 92
-        },
-        {
-          "keys": [
-            "can i study in uk after matric from pakistan"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 62
-        },
-        {
-          "keys": [
-            "chances"
-          ],
-          "clicks": 0,
-          "impressions": 1,
-          "ctr": 0,
-          "position": 3
-        },
-        {
-          "keys": [
-            "consaltants"
-          ],
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 49
-        },
-        {
-          "keys": [
-            "consultant contact number"
+            "9307066555"
           ],
           "clicks": 0,
           "impressions": 1,
@@ -667,39 +631,75 @@
         },
         {
           "keys": [
-            "consultant for italy study visa"
+            "9427455388"
           ],
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 61
+          "position": 9
         },
         {
           "keys": [
-            "consultants"
+            "981073666"
           ],
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
-          "position": 50
+          "position": 7
         },
         {
           "keys": [
-            "consultants in karachi"
+            "981287748"
           ],
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 1,
           "ctr": 0,
-          "position": 46.2
+          "position": 5
         },
         {
           "keys": [
-            "consultants in pakistan"
+            "981448261"
           ],
           "clicks": 0,
-          "impressions": 4,
+          "impressions": 1,
           "ctr": 0,
-          "position": 53.25
+          "position": 7
+        },
+        {
+          "keys": [
+            "981716395"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "keys": [
+            "9898460775"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "keys": [
+            "9925221863"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "keys": [
+            "9969317893"
+          ],
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
         }
       ],
       "top_pages": [
@@ -707,37 +707,46 @@
           "keys": [
             "https://www.evernestconsultants.com/"
           ],
-          "clicks": 54,
-          "impressions": 764,
-          "ctr": 0.07068062827225131,
-          "position": 9.68717277486911
+          "clicks": 52,
+          "impressions": 772,
+          "ctr": 0.06735751295336788,
+          "position": 10.191709844559586
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/contact"
           ],
-          "clicks": 12,
-          "impressions": 2502,
-          "ctr": 0.004796163069544364,
-          "position": 6.602318145483613
+          "clicks": 18,
+          "impressions": 5358,
+          "ctr": 0.0033594624860022394,
+          "position": 6.241694662187383
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visas/uzbekistan"
           ],
           "clicks": 2,
-          "impressions": 71,
-          "ctr": 0.028169014084507043,
-          "position": 8.112676056338028
+          "impressions": 76,
+          "ctr": 0.02631578947368421,
+          "position": 7.855263157894737
+        },
+        {
+          "keys": [
+            "https://www.evernestconsultants.com/success-stories"
+          ],
+          "clicks": 2,
+          "impressions": 131,
+          "ctr": 0.015267175572519083,
+          "position": 7.305343511450381
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/b2b-partnerships"
           ],
           "clicks": 1,
-          "impressions": 29,
-          "ctr": 0.034482758620689655,
-          "position": 10.517241379310345
+          "impressions": 31,
+          "ctr": 0.03225806451612903,
+          "position": 10.451612903225806
         },
         {
           "keys": [
@@ -746,70 +755,70 @@
           "clicks": 1,
           "impressions": 15,
           "ctr": 0.06666666666666667,
-          "position": 14.666666666666666
+          "position": 13.733333333333333
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visa-consultants-karachi"
           ],
           "clicks": 1,
-          "impressions": 76,
-          "ctr": 0.013157894736842105,
-          "position": 22.44736842105263
+          "impressions": 85,
+          "ctr": 0.011764705882352941,
+          "position": 21.023529411764706
+        },
+        {
+          "keys": [
+            "https://www.evernestconsultants.com/study-visas"
+          ],
+          "clicks": 1,
+          "impressions": 130,
+          "ctr": 0.007692307692307693,
+          "position": 9.96923076923077
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visas/canada"
           ],
           "clicks": 1,
-          "impressions": 19,
-          "ctr": 0.05263157894736842,
-          "position": 14.631578947368421
+          "impressions": 20,
+          "ctr": 0.05,
+          "position": 14.4
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/study-visas/france"
           ],
           "clicks": 1,
-          "impressions": 166,
-          "ctr": 0.006024096385542169,
-          "position": 21.228915662650603
-        },
-        {
-          "keys": [
-            "https://www.evernestconsultants.com/success-stories"
-          ],
-          "clicks": 1,
-          "impressions": 119,
-          "ctr": 0.008403361344537815,
-          "position": 7.512605042016807
+          "impressions": 174,
+          "ctr": 0.005747126436781609,
+          "position": 21.091954022988507
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/about/credentials"
           ],
           "clicks": 0,
-          "impressions": 39,
+          "impressions": 42,
           "ctr": 0,
-          "position": 13.58974358974359
+          "position": 14.238095238095237
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/about/sir-raza"
           ],
           "clicks": 0,
-          "impressions": 15,
+          "impressions": 13,
           "ctr": 0,
-          "position": 8.4
+          "position": 8.846153846153847
         },
         {
           "keys": [
             "https://www.evernestconsultants.com/immigration"
           ],
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 8,
           "ctr": 0,
-          "position": 4
+          "position": 4.125
         },
         {
           "keys": [
@@ -890,7 +899,7 @@
           "clicks": 0,
           "impressions": 25,
           "ctr": 0,
-          "position": 22.68
+          "position": 22.64
         },
         {
           "keys": [
@@ -899,16 +908,7 @@
           "clicks": 0,
           "impressions": 73,
           "ctr": 0,
-          "position": 8.643835616438356
-        },
-        {
-          "keys": [
-            "https://www.evernestconsultants.com/study-visas"
-          ],
-          "clicks": 0,
-          "impressions": 114,
-          "ctr": 0,
-          "position": 9.912280701754385
+          "position": 8.726027397260275
         },
         {
           "keys": [
@@ -924,9 +924,9 @@
             "https://www.evernestconsultants.com/study-visas/finland"
           ],
           "clicks": 0,
-          "impressions": 31,
+          "impressions": 36,
           "ctr": 0,
-          "position": 7.548387096774194
+          "position": 7.583333333333333
         }
       ]
     }
