@@ -7,8 +7,8 @@ import { ArrowRight, Award, Globe2, GraduationCap, Handshake, ShieldCheck, Waypo
 import { siteConfig } from "@/data/site"
 import { useEffect, useRef, useState } from "react"
 
-const headlineWords = ["Study visas,", "immigration,", "and"]
-const headlineHighlight = "global mobility"
+const headlineWords = ["Study", "Abroad", "Consultants", "in"]
+const headlineHighlight = "Pakistan"
 const heroEase: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 const wordVariants = {
@@ -206,7 +206,12 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.55 }}
               className="text-lg md:text-[1.18rem] text-brand-blue/78 mb-10 max-w-2xl leading-relaxed font-medium"
             >
-              EverNest Consultants supports students, professionals, and institutional partners with profile-based counseling, destination selection, document readiness, and transparent next-step guidance across study visas, immigration pathways, work permits, and B2B partnerships.
+              EverNest Consultants helps students plan study abroad — university
+              and course selection, admissions, scholarships, and student visa
+              filing — from Karachi, Lahore, and Islamabad. We also support
+              professionals and institutional partners with immigration pathways,
+              work permits, and B2B partnerships, backed by global desks in North
+              America and Europe.
             </motion.p>
 
             <motion.div
