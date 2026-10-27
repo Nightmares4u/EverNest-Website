@@ -6,23 +6,23 @@ import { ContactPageView } from "@/components/shared/ContactPageView"
 import { TrackedWhatsAppLink } from "@/components/shared/TrackedWhatsAppLink"
 import { buildMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = buildMetadata({
-  // This page draws the second-most impressions on the site at position ~11
-  // but had a 0% CTR over 90 days: it ranks for local "consultants in
-  // Karachi" intent while the old title just said "Contact". Title and
-  // description now answer that query instead.
-  title: "Contact Us — Karachi & Lahore Offices",
-  description:
-    "Visit or call EverNest Consultants in Karachi and Lahore for a free study visa and immigration consultation. 13+ years, British Council certified.",
-  path: "/contact",
-  keywords: [
-    "study visa consultants in Karachi",
-    "immigration consultants in Karachi",
-    "study visa consultants Lahore",
-    "Contact EverNest Consultants",
-    "free visa consultation Pakistan",
-  ],
-})
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: "Contact EverNest | Study Abroad Counselling in Pakistan",
+    description:
+      "Contact EverNest for study-abroad counselling in Karachi, Lahore and Islamabad, or ask about support through the Edmonton North America desk.",
+    path: "/contact",
+    keywords: [
+      "study visa consultants in Karachi",
+      "immigration consultants in Karachi",
+      "study visa consultants Lahore",
+      "study abroad counselling in Pakistan",
+      "Contact EverNest Consultants",
+      "free visa consultation Pakistan",
+    ],
+  }),
+  title: { absolute: "Contact EverNest | Study Abroad Counselling in Pakistan" },
+}
 
 export default function ContactPage() {
   return (
@@ -37,6 +37,14 @@ export default function ContactPage() {
             <p className="text-lg md:text-xl text-foreground/70 mb-10 leading-relaxed max-w-2xl">
               Whether you&apos;re looking to study abroad, immigrate, or partner with us, our experts are ready to assist you.
             </p>
+            <div className="md:hidden mb-2">
+              <a
+                href={`tel:${siteConfig.contact.phoneHref}`}
+                className="inline-flex items-center rounded-full bg-brand-red px-6 py-3 text-sm font-bold text-white shadow-glow transition-colors hover:bg-brand-red-2"
+              >
+                Call {siteConfig.contact.phone}
+              </a>
+            </div>
           </div>
         </div>
       </section>
