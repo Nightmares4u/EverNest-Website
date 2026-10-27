@@ -15,21 +15,22 @@ import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
 import { studyVisasData } from "@/data/study-visas"
 import { buildMetadata, getFirstSentence } from "@/lib/metadata"
 
-export const metadata: Metadata = buildMetadata({
-  // Ranked ~7 with a 0% CTR: good position, but "Study Visas" gave searchers
-  // no reason to click. Now targets the commercial query and states the offer.
-  title: "Study Visa Consultants in Pakistan",
-  description:
-    "Study visa guidance for 18 destinations including the UK, Canada, Italy, and Australia. Free profile evaluation from British Council certified consultants.",
-  path: "/study-visas",
-  keywords: [
-    "study visa consultants in Pakistan",
-    "study abroad consultants Karachi",
-    "student visa consultants Lahore",
-    "study visa destinations",
-    "EverNest Consultants",
-  ],
-})
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: "Study Visa Consultants in Pakistan",
+    description:
+      "Explore study destinations and get support with university applications, documents and student visa preparation. Book a profile-based consultation.",
+    path: "/study-visas",
+    keywords: [
+      "study visa consultants in Pakistan",
+      "study abroad consultants Karachi",
+      "student visa consultants Lahore",
+      "study visa destinations",
+      "EverNest Consultants",
+    ],
+  }),
+  title: { absolute: "Study Visa Consultants in Pakistan | EverNest" },
+}
 
 const destinations = Object.entries(studyVisasData).map(([slug, data]) => ({
   name: data.name,
@@ -77,7 +78,7 @@ export default function StudyVisasIndexPage() {
         variant="study"
         eyebrow="Secure a Study Visa"
         icon={<GraduationCap className="h-7 w-7" />}
-        title={<>Studying Abroad is No More Than a <span className="text-brand-red">Dream</span></>}
+        title={<>Study Visa Consultants in <span className="text-brand-red">Pakistan</span></>}
         subtitle="The top institutes of the world are waiting. EverNest helps you find the one that suits you."
         chips={["United States", "Canada", "United Kingdom", "Australia", "New Zealand", "European Union countries"]}
         galleryImages={studyHeroImages}
@@ -88,9 +89,6 @@ export default function StudyVisasIndexPage() {
       {/* Intro Section */}
       <section className="py-16 bg-white border-b border-border-subtle">
         <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-blue mb-4">
-            EverNest Simplifies Your Journey to Study Abroad
-          </h2>
           <p className="text-lg text-foreground/70 leading-relaxed">
             We have proven experts who understand your preferences and guide you towards a suitable study destination.
           </p>
@@ -101,7 +99,7 @@ export default function StudyVisasIndexPage() {
       <section className="py-20 bg-brand-ice/50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold text-brand-blue">Explore Our Destinations</h2>
+            <h2 className="text-3xl font-display font-bold text-brand-blue">Choose Your Study Destination</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {destinations.map((dest) => (
@@ -158,7 +156,7 @@ export default function StudyVisasIndexPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-blue mb-4">What Can EverNest Offer?</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-blue mb-4">How Our Admissions and Visa Support Works</h2>
             <p className="text-lg text-foreground/70 leading-relaxed">
               Along with securing your admission to a top university, EverNest stays by your side every step of the way, offering these added benefits to ensure you settle smoothly and confidently in your new country.
             </p>
@@ -202,7 +200,7 @@ export default function StudyVisasIndexPage() {
       <section className="py-20 bg-brand-blue text-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-display font-bold">Types of Study Visas That Are Available</h2>
+            <h3 className="text-3xl md:text-5xl font-display font-bold">Types of Study Visas That Are Available</h3>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -293,11 +291,71 @@ export default function StudyVisasIndexPage() {
         </div>
       </section>
 
+      {/* Documents */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-blue mb-4">Documents to Prepare</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              Exact requirements vary by destination, university, and course, and your
+              offer letter governs. As a starting checklist, most applications draw on:
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { title: "Passport", desc: "A valid passport covering your planned study period." },
+              { title: "Academic records", desc: "Transcripts and certificates for your completed education." },
+              { title: "English test evidence", desc: "IELTS, TOEFL, or another accepted test, where your course requires it." },
+              { title: "Statement of Purpose", desc: "Your reasons for the course and destination, prepared with your advisor." },
+              { title: "Financial evidence", desc: "Bank statements or sponsor documents showing you can fund tuition and living costs." },
+              { title: "Offer letter or CAS", desc: "Your university offer, and for the UK, your Confirmation of Acceptance for Studies." },
+            ].map((item) => (
+              <div key={item.title} className="bg-brand-neutral rounded-2xl p-6 border border-border-subtle">
+                <h3 className="font-bold text-brand-blue mb-2">{item.title}</h3>
+                <p className="text-foreground/70 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Fees and responsibilities */}
+      <section className="py-20 bg-brand-ice/50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-blue mb-4">Understand Fees and Responsibilities</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              Tuition and costs vary by institution and program, and are confirmed for
+              your shortlist before you apply — never assumed. Your initial profile
+              evaluation with EverNest is free, and the scope of any paid service is
+              agreed in writing before you commit.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+            <div className="bg-white rounded-2xl p-8 border border-border-subtle shadow-sm">
+              <h3 className="font-bold text-brand-blue mb-3 text-lg">What EverNest handles</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Profile-based destination and university selection, application and
+                document preparation, visa filing support, and pre-departure guidance.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 border border-border-subtle shadow-sm">
+              <h3 className="font-bold text-brand-blue mb-3 text-lg">What stays with you</h3>
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                Providing accurate documents, meeting deadlines, and attending
+                interviews where required. Final admission and visa decisions always
+                rest with the university and the embassy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20 bg-brand-ice/30">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold text-brand-blue">What People Ask</h2>
+            <h2 className="text-3xl font-display font-bold text-brand-blue">Questions About Your Application</h2>
           </div>
           <div className="space-y-4">
             <details className="group bg-white rounded-xl border border-border-subtle overflow-hidden">
