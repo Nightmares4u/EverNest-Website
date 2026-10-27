@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/resources/study-abroad-guide",
     "/resources/visa-interview-guide",
     "/resources/country-comparison",
+    "/resources/uk-january-2027-intake",
+    "/study-visa-consultants-lahore",
   ].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: now,
