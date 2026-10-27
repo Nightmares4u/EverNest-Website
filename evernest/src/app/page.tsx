@@ -17,20 +17,24 @@ import { FinalCTA } from "@/components/sections/FinalCTA"
 import { homepageGoogleReviews } from "@/data/google-reviews"
 import { buildMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = buildMetadata({
-  title: "Study Visa & Immigration Consultants in Pakistan",
-  description:
-    "British Council certified study visa and immigration consultants in Karachi, Lahore & Islamabad. Study abroad, work permits, and B2B partnerships.",
-  path: "/",
-  keywords: [
-    "study visa consultants in Pakistan",
-    "immigration consultants in Pakistan",
-    "study abroad consultants Karachi",
-    "study visa consultants Lahore",
-    "EverNest Consultants",
-    "B2B partnerships",
-  ],
-})
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: "Study Abroad Consultants in Pakistan",
+    description:
+      "Plan your studies abroad with EverNest. Get guidance on universities, admissions, scholarships and student visas in Karachi, Lahore and Islamabad.",
+    path: "/",
+    keywords: [
+      "study abroad consultants in Pakistan",
+      "study visa consultants in Pakistan",
+      "immigration consultants in Pakistan",
+      "study abroad consultants Karachi",
+      "study visa consultants Lahore",
+      "EverNest Consultants",
+      "B2B partnerships",
+    ],
+  }),
+  title: { absolute: "Study Abroad Consultants in Pakistan | EverNest" },
+}
 
 export default function Home() {
   return (
