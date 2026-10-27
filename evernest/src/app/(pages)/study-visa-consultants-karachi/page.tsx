@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { MapPin, Phone, Mail, CheckCircle2, GraduationCap, Briefcase, ChevronDown } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -7,6 +8,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA"
 import { CinematicPageHero } from "@/components/shared/CinematicPageHero"
 import { JsonLd } from "@/components/shared/JsonLd"
 import { siteConfig } from "@/data/site"
+import { officeMedia } from "@/data/office-media"
 import { studyVisasData } from "@/data/study-visas"
 import type { FaqItem } from "@/data/types"
 import { buildMetadata, absoluteUrl, SITE_URL } from "@/lib/metadata"
@@ -14,20 +16,23 @@ import { buildBreadcrumbSchema, buildFaqSchema } from "@/lib/schema"
 
 const PATH = "/study-visa-consultants-karachi"
 
-export const metadata: Metadata = buildMetadata({
-  title: "Study Abroad & Study Visa Consultants in Karachi",
-  description:
-    "Choosing study abroad consultants in Karachi? Get a free profile evaluation at EverNest, Shahrah-e-Faisal. 13+ years, British Council certified.",
-  path: PATH,
-  keywords: [
-    "study visa consultants in Karachi",
-    "immigration consultants in Karachi",
-    "best consultants in Karachi",
-    "study abroad consultants Karachi",
-    "student visa consultants Karachi",
-    "EverNest Consultants Karachi",
-  ],
-})
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: "Study Abroad Consultants in Karachi",
+    description:
+      "Speak with EverNest's Karachi team about study destinations, university applications, scholarships and student visa preparation. Book a consultation.",
+    path: PATH,
+    keywords: [
+      "study visa consultants in Karachi",
+      "immigration consultants in Karachi",
+      "best consultants in Karachi",
+      "study abroad consultants Karachi",
+      "student visa consultants Karachi",
+      "EverNest Consultants Karachi",
+    ],
+  }),
+  title: { absolute: "Study Abroad Consultants in Karachi | EverNest" },
+}
 
 const services = [
   {
@@ -186,7 +191,7 @@ export default function StudyVisaConsultantsKarachiPage() {
             <div className="lg:col-span-2 space-y-16">
               <div>
                 <h2 className="text-3xl font-display font-bold text-brand-blue mb-6">
-                  Visit our Karachi office
+                  Visit Our Karachi Office
                 </h2>
                 <div className="bg-white rounded-2xl p-6 md:p-8 border border-border-subtle shadow-sm space-y-5">
                   <div className="flex items-start">
@@ -227,6 +232,41 @@ export default function StudyVisaConsultantsKarachiPage() {
                     North America and Europe, so your case stays supported after you fly out.
                   </p>
                 </div>
+                <div className="grid sm:grid-cols-2 gap-6 mt-6">
+                  {officeMedia
+                    .filter((item) => item.branch === "Karachi")
+                    .map((item) => (
+                      <figure key={item.id} className="bg-white rounded-2xl border border-border-subtle shadow-sm overflow-hidden">
+                        <div className="relative h-56 w-full">
+                          <Image
+                            src={item.src}
+                            alt={item.alt}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            className="object-cover"
+                          />
+                        </div>
+                        <figcaption className="p-4 text-sm text-foreground/70 leading-relaxed">
+                          {item.caption}
+                        </figcaption>
+                      </figure>
+                    ))}
+                </div>
+              </div>
+
+              {/* Counselling team */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-brand-blue mb-3">
+                  Meet Your Counselling Team
+                </h2>
+                <p className="text-foreground/70 mb-6 leading-relaxed">
+                  The Karachi team handles profile evaluation, university and course
+                  shortlisting, admission and Statement of Purpose preparation, student
+                  visa filing and interview preparation, and pre-departure support.
+                  EverNest Consultants is British Council certified, and the first
+                  profile evaluation is free. Visit the office and meet the advisor who
+                  will handle your file before you pay anything.
+                </p>
               </div>
 
               {/* Selection criteria */}
@@ -287,7 +327,7 @@ export default function StudyVisaConsultantsKarachiPage() {
                     <GraduationCap className="h-5 w-5" />
                   </div>
                   <h2 className="text-3xl font-display font-bold text-brand-blue">
-                    Destinations we file from Karachi
+                    Explore Study Destinations
                   </h2>
                 </div>
                 <div className="bg-white rounded-2xl p-6 md:p-8 border border-border-subtle shadow-sm">
@@ -312,6 +352,56 @@ export default function StudyVisaConsultantsKarachiPage() {
                     </Link>
                   </div>
                 </div>
+              </div>
+
+              {/* Consultation process */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-brand-blue mb-3">
+                  How Your Consultation Works
+                </h2>
+                <p className="text-foreground/70 mb-6 leading-relaxed">
+                  Every case follows the same sequence, so you always know what comes
+                  next.
+                </p>
+                <ol className="space-y-4">
+                  {[
+                    { title: "Free profile evaluation", desc: "We review your academic record, budget, and target country, and tell you honestly which destinations you are a realistic candidate for before you commit to anything." },
+                    { title: "University and course shortlist", desc: "Shortlisting that matches your academic record, budget, and target country rather than whichever university pays the highest commission." },
+                    { title: "Application and SOP preparation", desc: "Statement of Purpose, transcripts, recommendation letters, and application filing prepared and checked before submission." },
+                    { title: "Visa filing and interview preparation", desc: "Complete visa file preparation, financial documentation, and interview preparation for your chosen destination." },
+                    { title: "Pre-departure support", desc: "Accommodation guidance, travel planning, and briefings so you land prepared rather than improvising." },
+                  ].map((step, i) => (
+                    <li
+                      key={step.title}
+                      className="bg-white p-6 rounded-xl border border-border-subtle shadow-sm flex gap-4"
+                    >
+                      <span className="h-8 w-8 flex-shrink-0 rounded-full bg-brand-blush text-brand-red font-bold flex items-center justify-center">
+                        {i + 1}
+                      </span>
+                      <div>
+                        <h3 className="font-bold text-brand-blue mb-2">{step.title}</h3>
+                        <p className="text-foreground/70 text-sm leading-relaxed">{step.desc}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+
+              {/* Student experiences */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-brand-blue mb-3">
+                  Karachi Student Experiences
+                </h2>
+                <p className="text-foreground/70 mb-6 leading-relaxed">
+                  Outcomes vary by profile, destination, and course, and the final
+                  decision on admission and visa always rests with the university and
+                  the embassy. Read examples of students we have guided on our{" "}
+                  <Link href="/success-stories" className="text-brand-red font-semibold hover:text-brand-blue transition-colors">
+                    success stories
+                  </Link>{" "}
+                  page, and ask us about recent outcomes for your destination and
+                  course level when you visit.
+                </p>
               </div>
 
               {/* FAQs */}
@@ -342,7 +432,7 @@ export default function StudyVisaConsultantsKarachiPage() {
             <div className="lg:col-span-1">
               <div className="sticky top-28 bg-white rounded-2xl p-8 border border-border-subtle shadow-card">
                 <h2 className="text-2xl font-display font-bold text-brand-blue mb-4">
-                  Free profile evaluation
+                  Book an Appointment
                 </h2>
                 <p className="text-foreground/70 mb-8">
                   Tell us your grades, budget, and where you want to go. We will tell you which
