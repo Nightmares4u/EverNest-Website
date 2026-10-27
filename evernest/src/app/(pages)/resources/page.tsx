@@ -16,6 +16,11 @@ export const metadata: Metadata = buildMetadata({
 
 const resources = [
   {
+    title: "UK January 2027 Intake",
+    slug: "uk-january-2027-intake",
+    desc: "Confirmed January 2027 courses, university deadlines and application steps for Pakistani students — plus what to do if your course is closed."
+  },
+  {
     title: "Study Abroad Guide",
     slug: "study-abroad-guide",
     desc: "A comprehensive step-by-step guide for students in Karachi planning their international education journey in 2025."
